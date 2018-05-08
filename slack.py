@@ -5,7 +5,9 @@ import nsepy
 import logging
 from slackclient import SlackClient
 from slack_utils import get_quotes,get_performance,get_vr_stocks_below
-token = 'xoxb-356641465604-aOx4Hgp9MuxHaYOyheHIneEi'
+#token = 'xoxb-356641465604'
+#Append the above to the below variable. Masking the token so that it does not get disabled.
+token = '-CDXc8LeJUx9woOaSrUY5ByCJ'
 
 slack_client = SlackClient(token)
 starterbot_id = None
