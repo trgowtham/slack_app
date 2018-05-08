@@ -1,0 +1,1131 @@
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/rtm.connect HTTP/1.1" 200 287
+DEBUG:root:RTM connected
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/auth.test HTTP/1.1" 200 127
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140129149282048:new transaction
+DEBUG:txn.140129149282048:commit
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=GNFC&series=EQ HTTP/1.1" 200 817
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/chat.postEphemeral HTTP/1.1" 200 64
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140129149282048:new transaction
+DEBUG:txn.140129149282048:commit
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=INDIGO&series=EQ HTTP/1.1" 200 963
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140129149282048:new transaction
+DEBUG:txn.140129149282048:commit
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (2): www.nseindia.com
+DEBUG:urllib3.connectionpool:http://www.nseindia.com:80 "GET /marketinfo/sym_map/symbolCount.jsp?symbol=INDIGO HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:http://www.nseindia.com:80 "GET /marketinfo/sym_map/symbolCount.jsp?symbol=INDIGO HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (2): www.nseindia.com
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /marketinfo/sym_map/symbolCount.jsp?symbol=INDIGO HTTP/1.1" 200 26
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /marketinfo/sym_map/symbolCount.jsp?symbol=INDIGO HTTP/1.1" 200 26
+DEBUG:urllib3.connectionpool:http://www.nseindia.com:80 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=INDIGO&series=EQ&symbolCount=1&fromDate=24-03-2018&toDate=07-05-2018 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:http://www.nseindia.com:80 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=INDIGO&series=EQ&symbolCount=1&fromDate=13-11-2017&toDate=23-03-2018 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=INDIGO&series=EQ&symbolCount=1&fromDate=24-03-2018&toDate=07-05-2018 HTTP/1.1" 200 4149
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=INDIGO&series=EQ&symbolCount=1&fromDate=13-11-2017&toDate=23-03-2018 HTTP/1.1" 200 11072
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/chat.postEphemeral HTTP/1.1" 200 62
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140129149282048:new transaction
+DEBUG:txn.140129149282048:commit
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/rtm.connect HTTP/1.1" 200 286
+DEBUG:root:RTM connected
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/auth.test HTTP/1.1" 200 127
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140550211933952:new transaction
+DEBUG:txn.140550211933952:commit
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=ITC&series=EQ HTTP/1.1" 200 983
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140550211933952:new transaction
+DEBUG:txn.140550211933952:commit
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (2): www.nseindia.com
+DEBUG:urllib3.connectionpool:http://www.nseindia.com:80 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=27-10-2017&toDate=06-03-2018 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:http://www.nseindia.com:80 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=07-03-2018&toDate=07-05-2018 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (2): www.nseindia.com
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=07-03-2018&toDate=07-05-2018 HTTP/1.1" 200 5432
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=27-10-2017&toDate=06-03-2018 HTTP/1.1" 200 10691
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/chat.postEphemeral HTTP/1.1" 200 64
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140550211933952:new transaction
+DEBUG:txn.140550211933952:commit
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=GNFS&series=EQ HTTP/1.1" 200 123
+ERROR:root:get_live_price: list index out of range
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/chat.postEphemeral HTTP/1.1" 200 64
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140550211933952:new transaction
+DEBUG:txn.140550211933952:commit
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=GNFC&series=EQ HTTP/1.1" 200 876
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/chat.postEphemeral HTTP/1.1" 200 64
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/rtm.connect HTTP/1.1" 200 289
+DEBUG:root:RTM connected
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/auth.test HTTP/1.1" 200 127
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140121082169088:new transaction
+DEBUG:txn.140121082169088:commit
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=ITC&series=EQ HTTP/1.1" 200 986
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140121082169088:new transaction
+DEBUG:txn.140121082169088:commit
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (2): www.nseindia.com
+DEBUG:urllib3.connectionpool:http://www.nseindia.com:80 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=27-10-2017&toDate=06-03-2018 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:http://www.nseindia.com:80 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=07-03-2018&toDate=07-05-2018 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (2): www.nseindia.com
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=27-10-2017&toDate=06-03-2018 HTTP/1.1" 200 10691
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=07-03-2018&toDate=07-05-2018 HTTP/1.1" 200 5432
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/chat.postEphemeral HTTP/1.1" 200 64
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140121082169088:new transaction
+DEBUG:txn.140121082169088:commit
+DEBUG:urllib3.connectionpool:Resetting dropped connection: www.nseindia.com
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=indigo&series=EQ HTTP/1.1" 200 1009
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/chat.postEphemeral HTTP/1.1" 200 62
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140121082169088:new transaction
+DEBUG:txn.140121082169088:commit
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=INDIGO&series=EQ HTTP/1.1" 200 1009
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140121082169088:new transaction
+DEBUG:txn.140121082169088:commit
+DEBUG:urllib3.connectionpool:Resetting dropped connection: www.nseindia.com
+DEBUG:urllib3.connectionpool:Resetting dropped connection: www.nseindia.com
+DEBUG:urllib3.connectionpool:http://www.nseindia.com:80 "GET /marketinfo/sym_map/symbolCount.jsp?symbol=INDIGO HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:Resetting dropped connection: www.nseindia.com
+DEBUG:urllib3.connectionpool:http://www.nseindia.com:80 "GET /marketinfo/sym_map/symbolCount.jsp?symbol=INDIGO HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:Resetting dropped connection: www.nseindia.com
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /marketinfo/sym_map/symbolCount.jsp?symbol=INDIGO HTTP/1.1" 200 26
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /marketinfo/sym_map/symbolCount.jsp?symbol=INDIGO HTTP/1.1" 200 26
+DEBUG:urllib3.connectionpool:http://www.nseindia.com:80 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=INDIGO&series=EQ&symbolCount=1&fromDate=13-11-2017&toDate=23-03-2018 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:http://www.nseindia.com:80 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=INDIGO&series=EQ&symbolCount=1&fromDate=24-03-2018&toDate=07-05-2018 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=INDIGO&series=EQ&symbolCount=1&fromDate=24-03-2018&toDate=07-05-2018 HTTP/1.1" 200 4148
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=INDIGO&series=EQ&symbolCount=1&fromDate=13-11-2017&toDate=23-03-2018 HTTP/1.1" 200 11069
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/chat.postEphemeral HTTP/1.1" 200 62
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/rtm.connect HTTP/1.1" 200 287
+DEBUG:root:RTM connected
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/auth.test HTTP/1.1" 200 127
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140115761600256:new transaction
+DEBUG:txn.140115761600256:commit
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=ITC&series=EQ HTTP/1.1" 200 982
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140115761600256:new transaction
+DEBUG:txn.140115761600256:commit
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (2): www.nseindia.com
+DEBUG:urllib3.connectionpool:http://www.nseindia.com:80 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=27-10-2017&toDate=06-03-2018 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:http://www.nseindia.com:80 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=07-03-2018&toDate=07-05-2018 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (2): www.nseindia.com
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=07-03-2018&toDate=07-05-2018 HTTP/1.1" 200 5432
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=27-10-2017&toDate=06-03-2018 HTTP/1.1" 200 10690
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/chat.postEphemeral HTTP/1.1" 200 62
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140115761600256:new transaction
+DEBUG:txn.140115761600256:commit
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=b%20ITC&series=EQ HTTP/1.1" 200 123
+ERROR:root:get_live_price: list index out of range
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/chat.postEphemeral HTTP/1.1" 200 62
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/rtm.connect HTTP/1.1" 200 291
+DEBUG:root:RTM connected
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/auth.test HTTP/1.1" 200 127
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140355191473920:new transaction
+DEBUG:txn.140355191473920:commit
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=ITC&series=EQ HTTP/1.1" 200 983
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140355191473920:new transaction
+DEBUG:txn.140355191473920:commit
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (2): www.nseindia.com
+DEBUG:urllib3.connectionpool:http://www.nseindia.com:80 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=27-10-2017&toDate=06-03-2018 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:http://www.nseindia.com:80 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=07-03-2018&toDate=07-05-2018 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (2): www.nseindia.com
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=07-03-2018&toDate=07-05-2018 HTTP/1.1" 200 5432
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=27-10-2017&toDate=06-03-2018 HTTP/1.1" 200 10690
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/chat.postEphemeral HTTP/1.1" 200 62
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/rtm.connect HTTP/1.1" 200 290
+DEBUG:root:RTM connected
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/auth.test HTTP/1.1" 200 127
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/rtm.connect HTTP/1.1" 200 283
+DEBUG:root:RTM connected
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/auth.test HTTP/1.1" 200 127
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/rtm.connect HTTP/1.1" 200 290
+DEBUG:root:RTM connected
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/auth.test HTTP/1.1" 200 127
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/rtm.connect HTTP/1.1" 200 285
+DEBUG:root:RTM connected
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/auth.test HTTP/1.1" 200 127
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/rtm.connect HTTP/1.1" 200 286
+DEBUG:root:RTM connected
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/auth.test HTTP/1.1" 200 127
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/rtm.connect HTTP/1.1" 200 287
+DEBUG:root:RTM connected
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/auth.test HTTP/1.1" 200 127
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/rtm.connect HTTP/1.1" 200 282
+DEBUG:root:RTM connected
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/auth.test HTTP/1.1" 200 127
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/rtm.connect HTTP/1.1" 200 289
+DEBUG:root:RTM connected
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/auth.test HTTP/1.1" 200 127
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/chat.postEphemeral HTTP/1.1" 200 64
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.139737242814208:new transaction
+DEBUG:txn.139737242814208:commit
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=ITC&series=EQ HTTP/1.1" 200 972
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.139737242814208:new transaction
+DEBUG:txn.139737242814208:commit
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (2): www.nseindia.com
+DEBUG:urllib3.connectionpool:http://www.nseindia.com:80 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=07-03-2018&toDate=07-05-2018 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:http://www.nseindia.com:80 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=27-10-2017&toDate=06-03-2018 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (2): www.nseindia.com
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=07-03-2018&toDate=07-05-2018 HTTP/1.1" 200 5432
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=27-10-2017&toDate=06-03-2018 HTTP/1.1" 200 10690
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/chat.postEphemeral HTTP/1.1" 200 64
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.139737242814208:new transaction
+DEBUG:txn.139737242814208:commit
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=itc&series=EQ HTTP/1.1" 200 973
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/chat.postEphemeral HTTP/1.1" 200 64
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.139737242814208:new transaction
+DEBUG:txn.139737242814208:commit
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=help&series=EQ HTTP/1.1" 200 123
+ERROR:root:get_live_price: list index out of range
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/chat.postEphemeral HTTP/1.1" 200 64
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/rtm.connect HTTP/1.1" 200 285
+DEBUG:root:RTM connected
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/auth.test HTTP/1.1" 200 127
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140086952113920:new transaction
+DEBUG:txn.140086952113920:commit
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=help&series=EQ HTTP/1.1" 200 123
+ERROR:root:get_live_price: list index out of range
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/chat.postEphemeral HTTP/1.1" 200 64
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140086952113920:new transaction
+DEBUG:txn.140086952113920:commit
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/chat.postEphemeral HTTP/1.1" 200 64
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140086952113920:new transaction
+DEBUG:txn.140086952113920:commit
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=ITC&series=EQ HTTP/1.1" 200 926
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140086952113920:new transaction
+DEBUG:txn.140086952113920:commit
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (2): www.nseindia.com
+DEBUG:urllib3.connectionpool:http://www.nseindia.com:80 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=27-10-2017&toDate=06-03-2018 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:http://www.nseindia.com:80 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=07-03-2018&toDate=07-05-2018 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (2): www.nseindia.com
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=27-10-2017&toDate=06-03-2018 HTTP/1.1" 200 10690
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=07-03-2018&toDate=07-05-2018 HTTP/1.1" 200 5432
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/chat.postEphemeral HTTP/1.1" 200 64
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140086952113920:new transaction
+DEBUG:txn.140086952113920:commit
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=ITC&series=EQ HTTP/1.1" 200 926
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140086952113920:new transaction
+DEBUG:txn.140086952113920:commit
+DEBUG:urllib3.connectionpool:http://www.nseindia.com:80 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=27-10-2017&toDate=06-03-2018 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:http://www.nseindia.com:80 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=07-03-2018&toDate=07-05-2018 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=27-10-2017&toDate=06-03-2018 HTTP/1.1" 200 10690
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=07-03-2018&toDate=07-05-2018 HTTP/1.1" 200 5432
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/chat.postEphemeral HTTP/1.1" 200 64
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/rtm.connect HTTP/1.1" 200 287
+DEBUG:root:RTM connected
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/auth.test HTTP/1.1" 200 127
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140296177207040:new transaction
+DEBUG:txn.140296177207040:commit
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=ITC&series=EQ HTTP/1.1" 200 926
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140296177207040:new transaction
+DEBUG:txn.140296177207040:commit
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (2): www.nseindia.com
+DEBUG:urllib3.connectionpool:http://www.nseindia.com:80 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=27-10-2017&toDate=06-03-2018 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:http://www.nseindia.com:80 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=07-03-2018&toDate=07-05-2018 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (2): www.nseindia.com
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=07-03-2018&toDate=07-05-2018 HTTP/1.1" 200 5432
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=27-10-2017&toDate=06-03-2018 HTTP/1.1" 200 10690
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/chat.postEphemeral HTTP/1.1" 200 62
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140296177207040:new transaction
+DEBUG:txn.140296177207040:commit
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/chat.postEphemeral HTTP/1.1" 200 64
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/rtm.connect HTTP/1.1" 200 288
+DEBUG:root:RTM connected
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/auth.test HTTP/1.1" 200 127
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140071864424192:new transaction
+DEBUG:txn.140071864424192:commit
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=ITC&series=EQ HTTP/1.1" 200 928
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140071864424192:new transaction
+DEBUG:txn.140071864424192:commit
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (2): www.nseindia.com
+DEBUG:urllib3.connectionpool:http://www.nseindia.com:80 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=27-10-2017&toDate=06-03-2018 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:http://www.nseindia.com:80 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=07-03-2018&toDate=07-05-2018 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (2): www.nseindia.com
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=27-10-2017&toDate=06-03-2018 HTTP/1.1" 200 10690
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=07-03-2018&toDate=07-05-2018 HTTP/1.1" 200 5432
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/chat.postEphemeral HTTP/1.1" 200 64
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/rtm.connect HTTP/1.1" 200 290
+DEBUG:root:RTM connected
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/auth.test HTTP/1.1" 200 127
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140429917292288:new transaction
+DEBUG:txn.140429917292288:commit
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140429917292288:new transaction
+DEBUG:txn.140429917292288:commit
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (2): www.nseindia.com
+DEBUG:urllib3.connectionpool:http://www.nseindia.com:80 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=27-10-2017&toDate=06-03-2018 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:http://www.nseindia.com:80 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=07-03-2018&toDate=07-05-2018 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (2): www.nseindia.com
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=27-10-2017&toDate=06-03-2018 HTTP/1.1" 200 10690
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=07-03-2018&toDate=07-05-2018 HTTP/1.1" 200 5432
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=ITC&series=EQ HTTP/1.1" 200 928
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/rtm.connect HTTP/1.1" 200 284
+DEBUG:root:RTM connected
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/auth.test HTTP/1.1" 200 127
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140185755313920:new transaction
+DEBUG:txn.140185755313920:commit
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140185755313920:new transaction
+DEBUG:txn.140185755313920:commit
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (2): www.nseindia.com
+DEBUG:urllib3.connectionpool:http://www.nseindia.com:80 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=27-10-2017&toDate=06-03-2018 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:http://www.nseindia.com:80 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=07-03-2018&toDate=07-05-2018 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (2): www.nseindia.com
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=27-10-2017&toDate=06-03-2018 HTTP/1.1" 200 10690
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=07-03-2018&toDate=07-05-2018 HTTP/1.1" 200 5432
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=ITC&series=EQ HTTP/1.1" 200 928
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/chat.postEphemeral HTTP/1.1" 200 64
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/rtm.connect HTTP/1.1" 200 287
+DEBUG:root:RTM connected
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/auth.test HTTP/1.1" 200 127
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140439909598976:new transaction
+DEBUG:txn.140439909598976:commit
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140439909598976:new transaction
+DEBUG:txn.140439909598976:commit
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (2): www.nseindia.com
+DEBUG:urllib3.connectionpool:http://www.nseindia.com:80 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=27-10-2017&toDate=06-03-2018 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:http://www.nseindia.com:80 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=07-03-2018&toDate=07-05-2018 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (2): www.nseindia.com
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=27-10-2017&toDate=06-03-2018 HTTP/1.1" 200 10690
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=07-03-2018&toDate=07-05-2018 HTTP/1.1" 200 5432
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=ITC&series=EQ HTTP/1.1" 200 928
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/chat.postEphemeral HTTP/1.1" 200 64
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/rtm.connect HTTP/1.1" 200 288
+DEBUG:root:RTM connected
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/auth.test HTTP/1.1" 200 127
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140591162353408:new transaction
+DEBUG:txn.140591162353408:commit
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140591162353408:new transaction
+DEBUG:txn.140591162353408:commit
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (2): www.nseindia.com
+DEBUG:urllib3.connectionpool:http://www.nseindia.com:80 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=07-03-2018&toDate=07-05-2018 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:http://www.nseindia.com:80 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=27-10-2017&toDate=06-03-2018 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (2): www.nseindia.com
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=27-10-2017&toDate=06-03-2018 HTTP/1.1" 200 10690
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=07-03-2018&toDate=07-05-2018 HTTP/1.1" 200 5432
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=ITC&series=EQ HTTP/1.1" 200 928
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/chat.postEphemeral HTTP/1.1" 200 64
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140591162353408:new transaction
+DEBUG:txn.140591162353408:commit
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140591162353408:new transaction
+DEBUG:txn.140591162353408:commit
+DEBUG:urllib3.connectionpool:http://www.nseindia.com:80 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ALLCARGO&series=EQ&symbolCount=1&fromDate=08-01-2018&toDate=07-05-2018 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ALLCARGO&series=EQ&symbolCount=1&fromDate=08-01-2018&toDate=07-05-2018 HTTP/1.1" 200 9110
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=ALLCARGO&series=EQ HTTP/1.1" 200 771
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/chat.postEphemeral HTTP/1.1" 200 62
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/rtm.connect HTTP/1.1" 200 287
+DEBUG:root:RTM connected
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/auth.test HTTP/1.1" 200 127
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140297868674816:new transaction
+DEBUG:txn.140297868674816:commit
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140297868674816:new transaction
+DEBUG:txn.140297868674816:commit
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (2): www.nseindia.com
+DEBUG:urllib3.connectionpool:http://www.nseindia.com:80 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=27-10-2017&toDate=06-03-2018 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:http://www.nseindia.com:80 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=07-03-2018&toDate=07-05-2018 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (2): www.nseindia.com
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=27-10-2017&toDate=06-03-2018 HTTP/1.1" 200 10690
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=07-03-2018&toDate=07-05-2018 HTTP/1.1" 200 5432
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=ITC&series=EQ HTTP/1.1" 200 928
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/chat.postEphemeral HTTP/1.1" 200 64
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140297868674816:new transaction
+DEBUG:txn.140297868674816:commit
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140297868674816:new transaction
+DEBUG:txn.140297868674816:commit
+DEBUG:urllib3.connectionpool:http://www.nseindia.com:80 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ALLCARGO&series=EQ&symbolCount=1&fromDate=08-01-2018&toDate=07-05-2018 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ALLCARGO&series=EQ&symbolCount=1&fromDate=08-01-2018&toDate=07-05-2018 HTTP/1.1" 200 9110
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=ALLCARGO&series=EQ HTTP/1.1" 200 771
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/chat.postEphemeral HTTP/1.1" 200 64
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/rtm.connect HTTP/1.1" 200 285
+DEBUG:root:RTM connected
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/auth.test HTTP/1.1" 200 127
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/rtm.connect HTTP/1.1" 200 289
+DEBUG:root:RTM connected
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/auth.test HTTP/1.1" 200 127
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/rtm.connect HTTP/1.1" 200 284
+DEBUG:root:RTM connected
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/auth.test HTTP/1.1" 200 127
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140697407133440:new transaction
+DEBUG:txn.140697407133440:commit
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140697407133440:new transaction
+DEBUG:txn.140697407133440:commit
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (2): www.nseindia.com
+DEBUG:urllib3.connectionpool:http://www.nseindia.com:80 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=07-03-2018&toDate=07-05-2018 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:http://www.nseindia.com:80 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=27-10-2017&toDate=06-03-2018 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (2): www.nseindia.com
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=27-10-2017&toDate=06-03-2018 HTTP/1.1" 200 10690
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=07-03-2018&toDate=07-05-2018 HTTP/1.1" 200 5432
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=ITC&series=EQ HTTP/1.1" 200 928
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/chat.postEphemeral HTTP/1.1" 200 64
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140697407133440:new transaction
+DEBUG:txn.140697407133440:commit
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140697407133440:new transaction
+DEBUG:txn.140697407133440:commit
+DEBUG:urllib3.connectionpool:http://www.nseindia.com:80 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ALLCARGO&series=EQ&symbolCount=1&fromDate=08-01-2018&toDate=07-05-2018 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ALLCARGO&series=EQ&symbolCount=1&fromDate=08-01-2018&toDate=07-05-2018 HTTP/1.1" 200 9110
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=ALLCARGO&series=EQ HTTP/1.1" 200 771
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/chat.postEphemeral HTTP/1.1" 200 64
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/rtm.connect HTTP/1.1" 200 290
+DEBUG:root:RTM connected
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/auth.test HTTP/1.1" 200 127
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.139819959801600:new transaction
+DEBUG:txn.139819959801600:commit
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=help&series=EQ HTTP/1.1" 200 122
+ERROR:root:get_live_price: list index out of range
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/chat.postEphemeral HTTP/1.1" 200 64
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/rtm.connect HTTP/1.1" 200 285
+DEBUG:root:RTM connected
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/auth.test HTTP/1.1" 200 127
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/rtm.connect HTTP/1.1" 200 287
+DEBUG:root:RTM connected
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/auth.test HTTP/1.1" 200 127
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/rtm.connect HTTP/1.1" 200 287
+DEBUG:root:RTM connected
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/auth.test HTTP/1.1" 200 127
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/chat.postEphemeral HTTP/1.1" 200 62
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/rtm.connect HTTP/1.1" 200 291
+DEBUG:root:RTM connected
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/auth.test HTTP/1.1" 200 127
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/chat.postEphemeral HTTP/1.1" 200 64
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/rtm.connect HTTP/1.1" 200 285
+DEBUG:root:RTM connected
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/auth.test HTTP/1.1" 200 127
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/chat.postEphemeral HTTP/1.1" 200 64
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/rtm.connect HTTP/1.1" 200 290
+DEBUG:root:RTM connected
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/auth.test HTTP/1.1" 200 127
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/rtm.connect HTTP/1.1" 200 289
+DEBUG:root:RTM connected
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/auth.test HTTP/1.1" 200 127
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/rtm.connect HTTP/1.1" 200 288
+DEBUG:root:RTM connected
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/auth.test HTTP/1.1" 200 127
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140411824924416:new transaction
+DEBUG:txn.140411824924416:commit
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/rtm.connect HTTP/1.1" 200 285
+DEBUG:root:RTM connected
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/auth.test HTTP/1.1" 200 127
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/rtm.connect HTTP/1.1" 200 287
+DEBUG:root:RTM connected
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/auth.test HTTP/1.1" 200 127
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140001818507008:new transaction
+DEBUG:txn.140001818507008:commit
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=AJANTPHARM&series=EQ HTTP/1.1" 200 931
+DEBUG:root:AJANTPHARM live: 1156.0 reco_price: 1322.25
+DEBUG:root:Appending : AJANTPHARM:  1156.0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=ALLCARGO&series=EQ HTTP/1.1" 200 760
+DEBUG:root:ALLCARGO live: 136.1 reco_price: 215.55
+DEBUG:root:Appending : ALLCARGO:  136.1
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=AMARAJABAT&series=EQ HTTP/1.1" 200 934
+DEBUG:root:AMARAJABAT live: 884.65 reco_price: 813.0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=ASHIANA&series=EQ HTTP/1.1" 200 778
+DEBUG:root:ASHIANA live: 159.95 reco_price: 166.7
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=BAJAJ-AUTO&series=EQ HTTP/1.1" 200 958
+DEBUG:root:BAJAJ-AUTO live: 2920.0 reco_price: 3283.4
+DEBUG:root:Appending : BAJAJ-AUTO:  2920.0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=COROMANDEL&series=EQ HTTP/1.1" 200 796
+DEBUG:root:COROMANDEL live: 455.95 reco_price: 488.0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=DIVISLAB&series=EQ HTTP/1.1" 200 954
+DEBUG:root:DIVISLAB live: 1205.0 reco_price: 858.6
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=HCLTECH&series=EQ HTTP/1.1" 200 948
+DEBUG:root:HCLTECH live: 929.3 reco_price: 869.05
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=HDFC&series=EQ HTTP/1.1" 200 965
+DEBUG:root:HDFC live: 1917.0 reco_price: 1773.05
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=HDFCBANK&series=EQ HTTP/1.1" 200 931
+DEBUG:root:HDFCBANK live: 1977.5 reco_price: 1822.0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=INDIGO&series=EQ HTTP/1.1" 200 956
+DEBUG:root:INDIGO live: 1167.1 reco_price: 1181.85
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=INFY&series=EQ HTTP/1.1" 200 967
+DEBUG:root:INFY live: 1184.0 reco_price: 1012.0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=ITC&series=EQ HTTP/1.1" 200 921
+DEBUG:root:ITC live: 282.5 reco_price: 268.4
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=KSCL&series=EQ HTTP/1.1" 200 922
+DEBUG:root:KSCL live: 513.0 reco_price: 576.7
+DEBUG:root:Appending : KSCL:  513.0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=LT&series=EQ HTTP/1.1" 200 962
+DEBUG:root:LT live: 1388.45 reco_price: 1223.5
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=NATCOPHARM&series=EQ HTTP/1.1" 200 784
+DEBUG:root:NATCOPHARM live: 793.9 reco_price: 776.4
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=PETRONET&series=EQ HTTP/1.1" 200 966
+DEBUG:root:PETRONET live: 221.55 reco_price: 258.4
+DEBUG:root:Appending : PETRONET:  221.55
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=PIIND&series=EQ HTTP/1.1" 200 774
+DEBUG:root:PIIND live: 872.25 reco_price: 756.75
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=POWERGRID&series=EQ HTTP/1.1" 200 955
+DEBUG:root:POWERGRID live: 209.95 reco_price: 193.2
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=VSTTILLERS&series=EQ HTTP/1.1" 200 802
+DEBUG:root:VSTTILLERS live: 3005.0 reco_price: 2104.7
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=VTL&series=EQ HTTP/1.1" 200 781
+DEBUG:root:VTL live: 1205.0 reco_price: 1316.0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=ZEEL&series=EQ HTTP/1.1" 200 950
+DEBUG:root:ZEEL live: 599.95 reco_price: 568.5
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/rtm.connect HTTP/1.1" 200 285
+DEBUG:root:RTM connected
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/auth.test HTTP/1.1" 200 127
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140321678235392:new transaction
+DEBUG:txn.140321678235392:commit
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=AJANTPHARM&series=EQ HTTP/1.1" 200 931
+DEBUG:root:AJANTPHARM live: 1156.0 reco_price: 1322.25
+DEBUG:root:Appending : AJANTPHARM:  1156.0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=ALLCARGO&series=EQ HTTP/1.1" 200 760
+DEBUG:root:ALLCARGO live: 136.1 reco_price: 215.55
+DEBUG:root:Appending : ALLCARGO:  136.1
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=AMARAJABAT&series=EQ HTTP/1.1" 200 934
+DEBUG:root:AMARAJABAT live: 884.65 reco_price: 813.0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=ASHIANA&series=EQ HTTP/1.1" 200 778
+DEBUG:root:ASHIANA live: 159.95 reco_price: 166.7
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=BAJAJ-AUTO&series=EQ HTTP/1.1" 200 958
+DEBUG:root:BAJAJ-AUTO live: 2920.0 reco_price: 3283.4
+DEBUG:root:Appending : BAJAJ-AUTO:  2920.0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=COROMANDEL&series=EQ HTTP/1.1" 200 796
+DEBUG:root:COROMANDEL live: 455.95 reco_price: 488.0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=DIVISLAB&series=EQ HTTP/1.1" 200 954
+DEBUG:root:DIVISLAB live: 1205.0 reco_price: 858.6
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=HCLTECH&series=EQ HTTP/1.1" 200 948
+DEBUG:root:HCLTECH live: 929.3 reco_price: 869.05
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=HDFC&series=EQ HTTP/1.1" 200 965
+DEBUG:root:HDFC live: 1917.0 reco_price: 1773.05
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=HDFCBANK&series=EQ HTTP/1.1" 200 931
+DEBUG:root:HDFCBANK live: 1977.5 reco_price: 1822.0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=INDIGO&series=EQ HTTP/1.1" 200 956
+DEBUG:root:INDIGO live: 1167.1 reco_price: 1181.85
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=INFY&series=EQ HTTP/1.1" 200 967
+DEBUG:root:INFY live: 1184.0 reco_price: 1012.0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=ITC&series=EQ HTTP/1.1" 200 921
+DEBUG:root:ITC live: 282.5 reco_price: 268.4
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=KSCL&series=EQ HTTP/1.1" 200 922
+DEBUG:root:KSCL live: 513.0 reco_price: 576.7
+DEBUG:root:Appending : KSCL:  513.0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=LT&series=EQ HTTP/1.1" 200 962
+DEBUG:root:LT live: 1388.45 reco_price: 1223.5
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=NATCOPHARM&series=EQ HTTP/1.1" 200 784
+DEBUG:root:NATCOPHARM live: 793.9 reco_price: 776.4
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=PETRONET&series=EQ HTTP/1.1" 200 966
+DEBUG:root:PETRONET live: 221.55 reco_price: 258.4
+DEBUG:root:Appending : PETRONET:  221.55
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=PIIND&series=EQ HTTP/1.1" 200 774
+DEBUG:root:PIIND live: 872.25 reco_price: 756.75
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=POWERGRID&series=EQ HTTP/1.1" 200 955
+DEBUG:root:POWERGRID live: 209.95 reco_price: 193.2
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=VSTTILLERS&series=EQ HTTP/1.1" 200 802
+DEBUG:root:VSTTILLERS live: 3005.0 reco_price: 2104.7
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=VTL&series=EQ HTTP/1.1" 200 781
+DEBUG:root:VTL live: 1205.0 reco_price: 1316.0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=ZEEL&series=EQ HTTP/1.1" 200 950
+DEBUG:root:ZEEL live: 599.95 reco_price: 568.5
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/chat.postEphemeral HTTP/1.1" 200 64
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140321678235392:new transaction
+DEBUG:txn.140321678235392:commit
+DEBUG:urllib3.connectionpool:Resetting dropped connection: www.nseindia.com
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=ITC&series=EQ HTTP/1.1" 200 921
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140321678235392:new transaction
+DEBUG:txn.140321678235392:commit
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (2): www.nseindia.com
+DEBUG:urllib3.connectionpool:http://www.nseindia.com:80 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=27-10-2017&toDate=06-03-2018 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:http://www.nseindia.com:80 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=07-03-2018&toDate=07-05-2018 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (2): www.nseindia.com
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=27-10-2017&toDate=06-03-2018 HTTP/1.1" 200 10697
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=07-03-2018&toDate=07-05-2018 HTTP/1.1" 200 5435
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/chat.postEphemeral HTTP/1.1" 200 64
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/rtm.connect HTTP/1.1" 200 286
+DEBUG:root:RTM connected
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/auth.test HTTP/1.1" 200 127
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140293677770496:new transaction
+DEBUG:txn.140293677770496:commit
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=AJANTPHARM&series=EQ HTTP/1.1" 200 931
+DEBUG:root:AJANTPHARM live: 1156.0 reco_price: 1322.25
+DEBUG:root:Appending : AJANTPHARM:  1156.0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=ALLCARGO&series=EQ HTTP/1.1" 200 760
+DEBUG:root:ALLCARGO live: 136.1 reco_price: 215.55
+DEBUG:root:Appending : ALLCARGO:  136.1
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=AMARAJABAT&series=EQ HTTP/1.1" 200 934
+DEBUG:root:AMARAJABAT live: 884.65 reco_price: 813.0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=ASHIANA&series=EQ HTTP/1.1" 200 778
+DEBUG:root:ASHIANA live: 159.95 reco_price: 166.7
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=BAJAJ-AUTO&series=EQ HTTP/1.1" 200 958
+DEBUG:root:BAJAJ-AUTO live: 2920.0 reco_price: 3283.4
+DEBUG:root:Appending : BAJAJ-AUTO:  2920.0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=COROMANDEL&series=EQ HTTP/1.1" 200 796
+DEBUG:root:COROMANDEL live: 455.95 reco_price: 488.0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=DIVISLAB&series=EQ HTTP/1.1" 200 954
+DEBUG:root:DIVISLAB live: 1205.0 reco_price: 858.6
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=HCLTECH&series=EQ HTTP/1.1" 200 948
+DEBUG:root:HCLTECH live: 929.3 reco_price: 869.05
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=HDFC&series=EQ HTTP/1.1" 200 965
+DEBUG:root:HDFC live: 1917.0 reco_price: 1773.05
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=HDFCBANK&series=EQ HTTP/1.1" 200 931
+DEBUG:root:HDFCBANK live: 1977.5 reco_price: 1822.0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=INDIGO&series=EQ HTTP/1.1" 200 956
+DEBUG:root:INDIGO live: 1167.1 reco_price: 1181.85
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=INFY&series=EQ HTTP/1.1" 200 967
+DEBUG:root:INFY live: 1184.0 reco_price: 1012.0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=ITC&series=EQ HTTP/1.1" 200 921
+DEBUG:root:ITC live: 282.5 reco_price: 268.4
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=KSCL&series=EQ HTTP/1.1" 200 922
+DEBUG:root:KSCL live: 513.0 reco_price: 576.7
+DEBUG:root:Appending : KSCL:  513.0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=LT&series=EQ HTTP/1.1" 200 962
+DEBUG:root:LT live: 1388.45 reco_price: 1223.5
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=NATCOPHARM&series=EQ HTTP/1.1" 200 784
+DEBUG:root:NATCOPHARM live: 793.9 reco_price: 776.4
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=PETRONET&series=EQ HTTP/1.1" 200 966
+DEBUG:root:PETRONET live: 221.55 reco_price: 258.4
+DEBUG:root:Appending : PETRONET:  221.55
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=PIIND&series=EQ HTTP/1.1" 200 774
+DEBUG:root:PIIND live: 872.25 reco_price: 756.75
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=POWERGRID&series=EQ HTTP/1.1" 200 955
+DEBUG:root:POWERGRID live: 209.95 reco_price: 193.2
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=VSTTILLERS&series=EQ HTTP/1.1" 200 802
+DEBUG:root:VSTTILLERS live: 3005.0 reco_price: 2104.7
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=VTL&series=EQ HTTP/1.1" 200 781
+DEBUG:root:VTL live: 1205.0 reco_price: 1316.0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=ZEEL&series=EQ HTTP/1.1" 200 950
+DEBUG:root:ZEEL live: 599.95 reco_price: 568.5
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/chat.postEphemeral HTTP/1.1" 200 62
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/rtm.connect HTTP/1.1" 200 288
+DEBUG:root:RTM connected
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/auth.test HTTP/1.1" 200 127
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/chat.postEphemeral HTTP/1.1" 200 64
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140141328426752:new transaction
+DEBUG:txn.140141328426752:commit
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=AJANTPHARM&series=EQ HTTP/1.1" 200 931
+DEBUG:root:AJANTPHARM live: 1156.0 reco_price: 1322.25
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=ALLCARGO&series=EQ HTTP/1.1" 200 760
+DEBUG:root:ALLCARGO live: 136.1 reco_price: 215.55
+DEBUG:root:Appending : ALLCARGO:  136.1
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=AMARAJABAT&series=EQ HTTP/1.1" 200 934
+DEBUG:root:AMARAJABAT live: 884.65 reco_price: 813.0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=ASHIANA&series=EQ HTTP/1.1" 200 778
+DEBUG:root:ASHIANA live: 159.95 reco_price: 166.7
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=BAJAJ-AUTO&series=EQ HTTP/1.1" 200 958
+DEBUG:root:BAJAJ-AUTO live: 2920.0 reco_price: 3283.4
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=COROMANDEL&series=EQ HTTP/1.1" 200 796
+DEBUG:root:COROMANDEL live: 455.95 reco_price: 488.0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=DIVISLAB&series=EQ HTTP/1.1" 200 954
+DEBUG:root:DIVISLAB live: 1205.0 reco_price: 858.6
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=HCLTECH&series=EQ HTTP/1.1" 200 948
+DEBUG:root:HCLTECH live: 929.3 reco_price: 869.05
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=HDFC&series=EQ HTTP/1.1" 200 965
+DEBUG:root:HDFC live: 1917.0 reco_price: 1773.05
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=HDFCBANK&series=EQ HTTP/1.1" 200 931
+DEBUG:root:HDFCBANK live: 1977.5 reco_price: 1822.0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=INDIGO&series=EQ HTTP/1.1" 200 956
+DEBUG:root:INDIGO live: 1167.1 reco_price: 1181.85
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=INFY&series=EQ HTTP/1.1" 200 967
+DEBUG:root:INFY live: 1184.0 reco_price: 1012.0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=ITC&series=EQ HTTP/1.1" 200 921
+DEBUG:root:ITC live: 282.5 reco_price: 268.4
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=KSCL&series=EQ HTTP/1.1" 200 922
+DEBUG:root:KSCL live: 513.0 reco_price: 576.7
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=LT&series=EQ HTTP/1.1" 200 962
+DEBUG:root:LT live: 1388.45 reco_price: 1223.5
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=NATCOPHARM&series=EQ HTTP/1.1" 200 784
+DEBUG:root:NATCOPHARM live: 793.9 reco_price: 776.4
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=PETRONET&series=EQ HTTP/1.1" 200 966
+DEBUG:root:PETRONET live: 221.55 reco_price: 258.4
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=PIIND&series=EQ HTTP/1.1" 200 774
+DEBUG:root:PIIND live: 872.25 reco_price: 756.75
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=POWERGRID&series=EQ HTTP/1.1" 200 955
+DEBUG:root:POWERGRID live: 209.95 reco_price: 193.2
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=VSTTILLERS&series=EQ HTTP/1.1" 200 802
+DEBUG:root:VSTTILLERS live: 3005.0 reco_price: 2104.7
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=VTL&series=EQ HTTP/1.1" 200 781
+DEBUG:root:VTL live: 1205.0 reco_price: 1316.0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=ZEEL&series=EQ HTTP/1.1" 200 950
+DEBUG:root:ZEEL live: 599.95 reco_price: 568.5
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/chat.postEphemeral HTTP/1.1" 200 64
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140141328426752:new transaction
+DEBUG:txn.140141328426752:commit
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=AJANTPHARM&series=EQ HTTP/1.1" 200 931
+DEBUG:root:AJANTPHARM live: 1156.0 reco_price: 1322.25
+DEBUG:root:Appending : AJANTPHARM:  1156.0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=ALLCARGO&series=EQ HTTP/1.1" 200 760
+DEBUG:root:ALLCARGO live: 136.1 reco_price: 215.55
+DEBUG:root:Appending : ALLCARGO:  136.1
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=AMARAJABAT&series=EQ HTTP/1.1" 200 934
+DEBUG:root:AMARAJABAT live: 884.65 reco_price: 813.0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=ASHIANA&series=EQ HTTP/1.1" 200 778
+DEBUG:root:ASHIANA live: 159.95 reco_price: 166.7
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=BAJAJ-AUTO&series=EQ HTTP/1.1" 200 958
+DEBUG:root:BAJAJ-AUTO live: 2920.0 reco_price: 3283.4
+DEBUG:root:Appending : BAJAJ-AUTO:  2920.0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=COROMANDEL&series=EQ HTTP/1.1" 200 796
+DEBUG:root:COROMANDEL live: 455.95 reco_price: 488.0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=DIVISLAB&series=EQ HTTP/1.1" 200 954
+DEBUG:root:DIVISLAB live: 1205.0 reco_price: 858.6
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=HCLTECH&series=EQ HTTP/1.1" 200 948
+DEBUG:root:HCLTECH live: 929.3 reco_price: 869.05
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=HDFC&series=EQ HTTP/1.1" 200 965
+DEBUG:root:HDFC live: 1917.0 reco_price: 1773.05
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=HDFCBANK&series=EQ HTTP/1.1" 200 931
+DEBUG:root:HDFCBANK live: 1977.5 reco_price: 1822.0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=INDIGO&series=EQ HTTP/1.1" 200 956
+DEBUG:root:INDIGO live: 1167.1 reco_price: 1181.85
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=INFY&series=EQ HTTP/1.1" 200 967
+DEBUG:root:INFY live: 1184.0 reco_price: 1012.0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=ITC&series=EQ HTTP/1.1" 200 921
+DEBUG:root:ITC live: 282.5 reco_price: 268.4
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=KSCL&series=EQ HTTP/1.1" 200 922
+DEBUG:root:KSCL live: 513.0 reco_price: 576.7
+DEBUG:root:Appending : KSCL:  513.0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=LT&series=EQ HTTP/1.1" 200 962
+DEBUG:root:LT live: 1388.45 reco_price: 1223.5
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=NATCOPHARM&series=EQ HTTP/1.1" 200 784
+DEBUG:root:NATCOPHARM live: 793.9 reco_price: 776.4
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=PETRONET&series=EQ HTTP/1.1" 200 966
+DEBUG:root:PETRONET live: 221.55 reco_price: 258.4
+DEBUG:root:Appending : PETRONET:  221.55
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=PIIND&series=EQ HTTP/1.1" 200 774
+DEBUG:root:PIIND live: 872.25 reco_price: 756.75
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=POWERGRID&series=EQ HTTP/1.1" 200 955
+DEBUG:root:POWERGRID live: 209.95 reco_price: 193.2
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=VSTTILLERS&series=EQ HTTP/1.1" 200 802
+DEBUG:root:VSTTILLERS live: 3005.0 reco_price: 2104.7
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=VTL&series=EQ HTTP/1.1" 200 781
+DEBUG:root:VTL live: 1205.0 reco_price: 1316.0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=ZEEL&series=EQ HTTP/1.1" 200 950
+DEBUG:root:ZEEL live: 599.95 reco_price: 568.5
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/chat.postEphemeral HTTP/1.1" 200 62
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/chat.postEphemeral HTTP/1.1" 200 64
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140141328426752:new transaction
+DEBUG:txn.140141328426752:commit
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140141328426752:new transaction
+DEBUG:txn.140141328426752:commit
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (2): www.nseindia.com
+DEBUG:urllib3.connectionpool:http://www.nseindia.com:80 "GET /marketinfo/sym_map/symbolCount.jsp?symbol=INDIGO HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:http://www.nseindia.com:80 "GET /marketinfo/sym_map/symbolCount.jsp?symbol=INDIGO HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (2): www.nseindia.com
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /marketinfo/sym_map/symbolCount.jsp?symbol=INDIGO HTTP/1.1" 200 26
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /marketinfo/sym_map/symbolCount.jsp?symbol=INDIGO HTTP/1.1" 200 26
+DEBUG:urllib3.connectionpool:http://www.nseindia.com:80 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=INDIGO&series=EQ&symbolCount=1&fromDate=24-03-2018&toDate=07-05-2018 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:http://www.nseindia.com:80 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=INDIGO&series=EQ&symbolCount=1&fromDate=13-11-2017&toDate=23-03-2018 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=INDIGO&series=EQ&symbolCount=1&fromDate=24-03-2018&toDate=07-05-2018 HTTP/1.1" 200 4262
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=INDIGO&series=EQ&symbolCount=1&fromDate=13-11-2017&toDate=23-03-2018 HTTP/1.1" 200 11072
+DEBUG:urllib3.connectionpool:Resetting dropped connection: www.nseindia.com
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=INDIGO&series=EQ HTTP/1.1" 200 956
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/rtm.connect HTTP/1.1" 200 288
+DEBUG:root:RTM connected
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/auth.test HTTP/1.1" 200 127
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140031320094464:new transaction
+DEBUG:txn.140031320094464:commit
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=VTL&series=EQ HTTP/1.1" 200 793
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140031320094464:new transaction
+DEBUG:txn.140031320094464:commit
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:http://www.nseindia.com:80 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=VTL&series=EQ&symbolCount=1&fromDate=09-03-2018&toDate=08-05-2018 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.nseindia.com
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=VTL&series=EQ&symbolCount=1&fromDate=09-03-2018&toDate=08-05-2018 HTTP/1.1" 200 4996
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/chat.postEphemeral HTTP/1.1" 200 62
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140031320094464:new transaction
+DEBUG:txn.140031320094464:commit
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=AJANTPHARM&series=EQ HTTP/1.1" 200 932
+DEBUG:root:AJANTPHARM live: 1160.0 reco_price: 1322.25
+DEBUG:root:Appending : AJANTPHARM:  1160.0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=ALLCARGO&series=EQ HTTP/1.1" 200 777
+DEBUG:root:ALLCARGO live: 132.85 reco_price: 215.55
+DEBUG:root:Appending : ALLCARGO:  132.85
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=AMARAJABAT&series=EQ HTTP/1.1" 200 934
+DEBUG:root:AMARAJABAT live: 869.2 reco_price: 813.0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=ASHIANA&series=EQ HTTP/1.1" 200 795
+DEBUG:root:ASHIANA live: 157.5 reco_price: 166.7
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=BAJAJ-AUTO&series=EQ HTTP/1.1" 200 964
+DEBUG:root:BAJAJ-AUTO live: 2895.65 reco_price: 3283.4
+DEBUG:root:Appending : BAJAJ-AUTO:  2895.65
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=COROMANDEL&series=EQ HTTP/1.1" 200 805
+DEBUG:root:COROMANDEL live: 446.0 reco_price: 488.0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=DIVISLAB&series=EQ HTTP/1.1" 200 956
+DEBUG:root:DIVISLAB live: 1207.3 reco_price: 858.6
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=HCLTECH&series=EQ HTTP/1.1" 200 956
+DEBUG:root:HCLTECH live: 920.0 reco_price: 869.05
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=HDFC&series=EQ HTTP/1.1" 200 988
+DEBUG:root:HDFC live: 1896.25 reco_price: 1773.05
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=HDFCBANK&series=EQ HTTP/1.1" 200 943
+DEBUG:root:HDFCBANK live: 1966.5 reco_price: 1822.0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=INDIGO&series=EQ HTTP/1.1" 200 967
+DEBUG:root:INDIGO live: 1200.25 reco_price: 1181.85
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=INFY&series=EQ HTTP/1.1" 200 967
+DEBUG:root:INFY live: 1167.5 reco_price: 1012.0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=ITC&series=EQ HTTP/1.1" 200 912
+DEBUG:root:ITC live: 282.7 reco_price: 268.4
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=KSCL&series=EQ HTTP/1.1" 200 920
+DEBUG:root:KSCL live: 507.55 reco_price: 576.7
+DEBUG:root:Appending : KSCL:  507.55
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=LT&series=EQ HTTP/1.1" 200 964
+DEBUG:root:LT live: 1364.9 reco_price: 1223.5
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=NATCOPHARM&series=EQ HTTP/1.1" 200 786
+DEBUG:root:NATCOPHARM live: 803.0 reco_price: 776.4
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=PETRONET&series=EQ HTTP/1.1" 200 977
+DEBUG:root:PETRONET live: 217.7 reco_price: 258.4
+DEBUG:root:Appending : PETRONET:  217.7
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=PIIND&series=EQ HTTP/1.1" 200 778
+DEBUG:root:PIIND live: 879.0 reco_price: 756.75
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=POWERGRID&series=EQ HTTP/1.1" 200 964
+DEBUG:root:POWERGRID live: 212.5 reco_price: 193.2
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=VSTTILLERS&series=EQ HTTP/1.1" 200 801
+DEBUG:root:VSTTILLERS live: 2951.0 reco_price: 2104.7
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=VTL&series=EQ HTTP/1.1" 200 793
+DEBUG:root:VTL live: 1215.0 reco_price: 1316.0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=ZEEL&series=EQ HTTP/1.1" 200 960
+DEBUG:root:ZEEL live: 592.8 reco_price: 568.5
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/chat.postEphemeral HTTP/1.1" 200 64
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140031320094464:new transaction
+DEBUG:txn.140031320094464:commit
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=VTL&series=EQ HTTP/1.1" 200 793
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140031320094464:new transaction
+DEBUG:txn.140031320094464:commit
+DEBUG:urllib3.connectionpool:http://www.nseindia.com:80 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=VTL&series=EQ&symbolCount=1&fromDate=09-03-2018&toDate=08-05-2018 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=VTL&series=EQ&symbolCount=1&fromDate=09-03-2018&toDate=08-05-2018 HTTP/1.1" 200 4996
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/chat.postEphemeral HTTP/1.1" 200 64
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140031320094464:new transaction
+DEBUG:txn.140031320094464:commit
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=VTL&series=EQ HTTP/1.1" 200 793
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140031320094464:new transaction
+DEBUG:txn.140031320094464:commit
+DEBUG:urllib3.connectionpool:http://www.nseindia.com:80 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=VTL&series=EQ&symbolCount=1&fromDate=09-03-2018&toDate=08-05-2018 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=VTL&series=EQ&symbolCount=1&fromDate=09-03-2018&toDate=08-05-2018 HTTP/1.1" 200 4996
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/chat.postEphemeral HTTP/1.1" 200 62
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/chat.postEphemeral HTTP/1.1" 200 64
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140031320094464:new transaction
+DEBUG:txn.140031320094464:commit
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=Vr&series=EQ HTTP/1.1" 200 123
+ERROR:root:get_live_price: list index out of range
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/chat.postEphemeral HTTP/1.1" 200 64
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140031320094464:new transaction
+DEBUG:txn.140031320094464:commit
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=Itc&series=EQ HTTP/1.1" 200 913
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/chat.postEphemeral HTTP/1.1" 200 64
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140031320094464:new transaction
+DEBUG:txn.140031320094464:commit
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=itc&series=EQ HTTP/1.1" 200 914
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/chat.postEphemeral HTTP/1.1" 200 64
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140031320094464:new transaction
+DEBUG:txn.140031320094464:commit
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=ITC&series=EQ HTTP/1.1" 200 914
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140031320094464:new transaction
+DEBUG:txn.140031320094464:commit
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (2): www.nseindia.com
+DEBUG:urllib3.connectionpool:http://www.nseindia.com:80 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=27-10-2017&toDate=06-03-2018 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:http://www.nseindia.com:80 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=07-03-2018&toDate=08-05-2018 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (2): www.nseindia.com
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=27-10-2017&toDate=06-03-2018 HTTP/1.1" 200 10690
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=07-03-2018&toDate=08-05-2018 HTTP/1.1" 200 5546
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/chat.postEphemeral HTTP/1.1" 200 62
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140031320094464:new transaction
+DEBUG:txn.140031320094464:commit
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=VR&series=EQ HTTP/1.1" 200 123
+ERROR:root:get_live_price: list index out of range
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/chat.postEphemeral HTTP/1.1" 200 64
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/chat.postEphemeral HTTP/1.1" 200 64
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140031320094464:new transaction
+DEBUG:txn.140031320094464:commit
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=AJANTPHARM&series=EQ HTTP/1.1" 200 934
+DEBUG:root:AJANTPHARM live: 1160.0 reco_price: 1322.25
+DEBUG:root:Appending : AJANTPHARM:  1160.0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=ALLCARGO&series=EQ HTTP/1.1" 200 777
+DEBUG:root:ALLCARGO live: 132.85 reco_price: 215.55
+DEBUG:root:Appending : ALLCARGO:  132.85
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=AMARAJABAT&series=EQ HTTP/1.1" 200 934
+DEBUG:root:AMARAJABAT live: 869.2 reco_price: 813.0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=ASHIANA&series=EQ HTTP/1.1" 200 795
+DEBUG:root:ASHIANA live: 157.5 reco_price: 166.7
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=BAJAJ-AUTO&series=EQ HTTP/1.1" 200 964
+DEBUG:root:BAJAJ-AUTO live: 2895.65 reco_price: 3283.4
+DEBUG:root:Appending : BAJAJ-AUTO:  2895.65
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=COROMANDEL&series=EQ HTTP/1.1" 200 805
+DEBUG:root:COROMANDEL live: 446.0 reco_price: 488.0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=DIVISLAB&series=EQ HTTP/1.1" 200 958
+DEBUG:root:DIVISLAB live: 1207.3 reco_price: 858.6
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=HCLTECH&series=EQ HTTP/1.1" 200 955
+DEBUG:root:HCLTECH live: 920.0 reco_price: 869.05
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=HDFC&series=EQ HTTP/1.1" 200 989
+DEBUG:root:HDFC live: 1896.25 reco_price: 1773.05
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=HDFCBANK&series=EQ HTTP/1.1" 200 943
+DEBUG:root:HDFCBANK live: 1966.5 reco_price: 1822.0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=INDIGO&series=EQ HTTP/1.1" 200 971
+DEBUG:root:INDIGO live: 1200.25 reco_price: 1181.85
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=INFY&series=EQ HTTP/1.1" 200 969
+DEBUG:root:INFY live: 1167.5 reco_price: 1012.0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=ITC&series=EQ HTTP/1.1" 200 917
+DEBUG:root:ITC live: 282.7 reco_price: 268.4
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=KSCL&series=EQ HTTP/1.1" 200 921
+DEBUG:root:KSCL live: 507.55 reco_price: 576.7
+DEBUG:root:Appending : KSCL:  507.55
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=LT&series=EQ HTTP/1.1" 200 962
+DEBUG:root:LT live: 1364.9 reco_price: 1223.5
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=NATCOPHARM&series=EQ HTTP/1.1" 200 786
+DEBUG:root:NATCOPHARM live: 803.0 reco_price: 776.4
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=PETRONET&series=EQ HTTP/1.1" 200 978
+DEBUG:root:PETRONET live: 217.7 reco_price: 258.4
+DEBUG:root:Appending : PETRONET:  217.7
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=PIIND&series=EQ HTTP/1.1" 200 778
+DEBUG:root:PIIND live: 879.0 reco_price: 756.75
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=POWERGRID&series=EQ HTTP/1.1" 200 964
+DEBUG:root:POWERGRID live: 212.5 reco_price: 193.2
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=VSTTILLERS&series=EQ HTTP/1.1" 200 802
+DEBUG:root:VSTTILLERS live: 2951.0 reco_price: 2104.7
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=VTL&series=EQ HTTP/1.1" 200 793
+DEBUG:root:VTL live: 1215.0 reco_price: 1316.0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=ZEEL&series=EQ HTTP/1.1" 200 960
+DEBUG:root:ZEEL live: 592.8 reco_price: 568.5
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/chat.postEphemeral HTTP/1.1" 200 62
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140031320094464:new transaction
+DEBUG:txn.140031320094464:commit
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?symbol=ITC&series=EQ HTTP/1.1" 200 917
+DEBUG:ZODB.BaseStorage:create storage /home/ubuntu/slack_app/db/mydata.fs
+DEBUG:txn.140031320094464:new transaction
+DEBUG:txn.140031320094464:commit
+DEBUG:urllib3.connectionpool:http://www.nseindia.com:80 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=27-10-2017&toDate=06-03-2018 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:http://www.nseindia.com:80 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=07-03-2018&toDate=08-05-2018 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=27-10-2017&toDate=06-03-2018 HTTP/1.1" 200 10690
+DEBUG:urllib3.connectionpool:https://www.nseindia.com:443 "GET /products/dynaContent/common/productsSymbolMapping.jsp?dataType=PRICEVOLUMEDELIVERABLE&segmentLink=3&dateRange=&symbol=ITC&series=EQ&symbolCount=2&fromDate=07-03-2018&toDate=08-05-2018 HTTP/1.1" 200 5546
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): slack.com
+DEBUG:urllib3.connectionpool:https://slack.com:443 "POST /api/chat.postEphemeral HTTP/1.1" 200 64
