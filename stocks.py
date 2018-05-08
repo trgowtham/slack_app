@@ -1,5 +1,9 @@
+import logging
 import persistent
+from logging.config import fileConfig
 
+
+#TODO find better place to open 1 db instance shared across methods
 # subclass of Persistent to save in DB
 class Stock(persistent.Persistent):
 
@@ -21,7 +25,7 @@ class Stock(persistent.Persistent):
         self.stock_id = stock_id
 
 
-
+#TODO: Change it to accept what type of stock we want timely or all-weather
 def get_stocks():
     '''
     return all timely or all-weather stocks
@@ -30,12 +34,14 @@ def get_stocks():
     '''
     from db_utils import MyZODB
     mydb = MyZODB()
-    print(f"Total Recommended stocks : {len(mydb.dbroot.stocks)}")
+    logging.debug(f"Total Recommended stocks : {len(mydb.dbroot.stocks)}")
     for stock in mydb.dbroot.stocks:
-        print(repr(stock))
-
+        logging.debug(repr(stock))
     return mydb.dbroot.stocks
 
 
 if __name__ == '__main__':
-    get_stocks()
+    fileConfig('logging.ini',disable_existing_loggers=True)
+    logger = logging.getLogger()
+    res = get_stocks()
+    logging.debug("get stocks: stored in %s" % type(res))

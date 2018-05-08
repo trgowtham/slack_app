@@ -1,13 +1,18 @@
 '''
 
 Interface which can be called directly by Slack users
-
+Here ideally we should be getting response from functions in utils.py
+format them and then return.
 
 '''
-
+import logging
+from logging.config import fileConfig
 from utils import check_vr_reco, min_max_reco_date, get_live_price, reco_percent, alert_below_percentage
 
+#TODO use a separate formatting class to do formatting takes a list as input and gives
+# proper formatted output
 #TODO: use decorator to catch exceptions
+
 def get_quotes(symbol):
     '''
 
@@ -78,7 +83,7 @@ def get_vr_stocks_below(percentage):
     response = []
     for symbol in alert_below_percentage(int(percentage)):
         slist = symbol.split(';')
-        print(symbol)
+        logging.debug(f'{symbol}')
         response.append(f'{"Symbol:":<15}{slist[0]:<25}')
         response.append(f'{"Live price:":<15}{slist[2]:<25}')
         response.append(f'{"Reco price:":<15}{slist[1]:<25}')
@@ -89,5 +94,7 @@ def get_vr_stocks_below(percentage):
 
 
 if __name__ == '__main__':
+    fileConfig('logging.ini', disable_existing_loggers=True)
+    logger = logging.getLogger()
     res = get_quotes("INDIGO")
-    print(res)
+    logging.debug("get quotes %s" % str(res))

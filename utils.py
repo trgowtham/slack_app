@@ -1,6 +1,7 @@
 import nsepy
 import logging
 
+from logging.config import fileConfig
 from datetime import date
 from stocks import get_stocks
 from db_utils import MyZODB
@@ -19,6 +20,7 @@ def check_vr_reco(symbol):
     stock = None
     mydb = MyZODB()
     if symbol in mydb.dbroot.stocks:
+        logging.debug(f'{symbol} found in DB. returning stock object')
         stock = mydb.dbroot.stocks[symbol]
     mydb.close()
     return stock
@@ -34,6 +36,7 @@ def get_min_max(stock, start_date, end_date):
     data = nsepy.get_history(symbol=stock, start=start_date, end=end_date)
     min = data['Low'].min()
     max = data['High'].max()
+    logging.debug(f'for {stock} return values ({min},{max})')
     return (min, max)
 
 
@@ -128,8 +131,7 @@ def reco_percent(percent, dir):
 
 
 if __name__ == '__main__':
-    #data = min_max_reco_date()
-    #for line in data:
-    #    print(line)
+    fileConfig('logging.ini', disable_existing_loggers=True)
+    logger = logging.getLogger()
     result = alert_below_percentage(10)
-    print(result)
+    logging.debug(f'result of alert_below_percentage(10):  {result}')
