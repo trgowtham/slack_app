@@ -3,6 +3,8 @@ import time
 import re
 import nsepy
 import logging
+
+from logging.config import fileConfig
 from slackclient import SlackClient
 from slack_utils import get_quotes,get_performance,get_vr_stocks_below
 token_pre = 'xoxb-356641465604'
@@ -81,7 +83,12 @@ def get_quote_message(symbol):
     return response
 
 if __name__ == "__main__":
-    logging.basicConfig(level=logging.DEBUG, filename='slack_stock.log')
+    #logging.basicConfig(level=logging.DEBUG, filename='slack_stock.log')
+    fileConfig('logging.ini')
+    logger = logging.getLogger()
+
+    fileHandler = logging.FileHandler('slack_stack.log')
+    logger.addHandler(fileHandler)
     #slack_message("Alert!", "stock-alerts");
     if slack_client.rtm_connect(with_team_state=False):
         print("Stock Bot connected and running!")
