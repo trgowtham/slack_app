@@ -103,6 +103,7 @@ def alert_below_percentage(percentage):
     result = []
     multiplier = (100 - percentage)/100
     for stock_symbol, stock in mydb.dbroot.stocks.items():
+        #TODO this can be executed parallely using multiprocess
         live_price = get_live_price(stock_symbol).lastPrice
         reco_price = float(stock.reco_date_price.replace(',', ''))
         logging.debug(f'{stock_symbol} live: {live_price} reco_price: {reco_price}')
