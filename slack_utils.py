@@ -6,13 +6,12 @@ format them and then return.
 
 '''
 import logging
+
+from tabulate import tabulate
 from logging.config import fileConfig
 from utils import check_vr_reco, min_max_reco_date, get_live_price, reco_percent, alert_below_percentage
 
-#TODO use a separate formatting class to do formatting takes a list as input and gives
-# proper formatted output
 #TODO: use decorator to catch exceptions
-
 def get_quotes(symbol):
     '''
 
@@ -23,22 +22,27 @@ def get_quotes(symbol):
     try:
         stock = check_vr_reco(symbol)
         info = get_live_price(symbol)
-        response = []
-        response.append(f'{info.name:^}')
-        response.append(f'{"LastPrice:":<25}{str(info.lastPrice).strip():<25}')#({info.pChange:<12}%)')
-        response.append(f'{"Day Low:":<24} {str(info.dayLow).strip():<24}')
-        response.append(f'{"Day High:":<24} {info.dayHigh:<24}')
-        response.append(f'{"Day Open:":<25}{info.open:<25}')
+        data = [[info.name],
+                ["LastPrice:", info.lastPrice, info.pChange],
+                ["Day Low:", info.dayLow],
+                ["Day High:", info.dayHigh],
+                ["Day Open:", info.open],
+                ]
+        logging.debug(str(data))
         if stock:
             # stock recommended in VR, get reco price and other details
             result = min_max_reco_date(symbol)
             print(result[1])
-            _ , vr_reco_date, vr_reco_price, vr_min, vr_max = result[1].split(';')
-            response.append(f'{"Vr Reco Date:":<25}{vr_reco_date:<25}')
-            response.append(f'{"VR Reco Price:":<25}{vr_reco_price:<25}')
-            response.append(f'{"VR Min:":<25}{vr_min:<25}')
-        return '\n'.join(response)
+            _, vr_reco_date, vr_reco_price, vr_min, vr_max = result[1].split(';')
+            data.append(["VR Reco Date:", vr_reco_date]),
+            data.append(["VR Reco Price:", vr_reco_price])
+            data.append(["VR Min:", vr_min])
+            data.append(  ["VR Max:", vr_max])
+        ret = tabulate(data, tablefmt="simple", headers="firstrow")# numalign="left")
+        logging.debug(ret)
+        return ret
     except IndexError as err:
+        logging.debug(str(err))
         return 'IndexError'
 
 def get_performance(symbol):
@@ -50,26 +54,26 @@ def get_performance(symbol):
         2. Low it attained
         3. Performance as per current price
     '''
+    #TODO should be done by slack.py
+    symbol = symbol.upper()
     try:
         if(check_vr_reco(symbol) is None):
             return 'Not a VR recommendation'
 
         result = min_max_reco_date(symbol)
         info = get_live_price(symbol)
-        response = []
-        response.append(f'{info.name:^}')
-        response.append(f'{"CurrentPrice:":<25}{str(info.lastPrice).strip():<25}({info.pChange:<12}%)')
-        print(result[1])
-        _ , vr_reco_date, vr_reco_price, vr_min, vr_max = result[1].split(';')
-        response.append(f'{"Vr Reco Date:":<25}{vr_reco_date:<25}')
-        response.append(f'{"VR Reco Price:":<25}{vr_reco_price:<25}')
-        response.append(f'{"VR Max:":<25}{vr_max:<25}')
-        response.append(f'{"VR Min:":<25}{vr_min:<25}')
+        _, vr_reco_date, vr_reco_price, vr_min, vr_max = result[1].split(';')
+        response = [[info.name],
+                    ["CurrentPrice:", info.lastPrice, info.pChange],
+                    ["Vr Reco Date:", vr_reco_date],
+                    ["VR Reco Price:", vr_reco_price],
+                    ["VR Max:", vr_max],
+                    ["VR Min:", vr_min]
+                    ]
         perf = ((info.lastPrice - float(vr_reco_price)) / float(vr_reco_price)) * 100
-        print(perf)
-        response.append(f'{"Performance:":<25}{round(perf,2):<5}%')
-        return '\n'.join(response)
-
+        response.append(["Performance:",round(perf,2) ])
+        ret = tabulate(response, tablefmt="simple", headers="firstrow")
+        return ret
     except IndexError:
         return 'TBA'
 

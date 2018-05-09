@@ -50,7 +50,7 @@ def slack_direct_message(uname, channel, symbol):
                 response = funcDict['help']()
             else:
                 response = funcDict[slist[0]](slist[1])
-            print(symbol.split());
+            print(symbol.split())
         else:
             # capitalize the symbol if not
             response = funcDict['quote'](slist[0].upper())
