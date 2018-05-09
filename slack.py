@@ -41,22 +41,26 @@ def slack_message(message, channel):
 def slack_direct_message(uname, channel, symbol):
     # Sends the direct response back to the channel
     #response = get_quotes(symbol)
-
-    slist = symbol.split();
-    if(slist[0] in funcDict.keys()):
-        if(symbol == 'help'):
-            response = funcDict['help']()
+    try:
+        slist = symbol.split();
+        if(slist[0] in funcDict.keys()):
+            if(symbol == 'help'):
+                response = funcDict['help']()
+            else:
+                response = funcDict[slist[0]](slist[1])
+            print(symbol.split());
         else:
-            response = funcDict[slist[0]](slist[1])
-        print(symbol.split());
-    else:
-        # capitalize the symbol if not
-        response = funcDict['quote'](slist[0].upper())
+            # capitalize the symbol if not
+            response = funcDict['quote'](slist[0].upper())
+
+
+    except Exception as ex:
+        response = "Invalid value.Exception raised"
 
     slack_client.api_call(
-        "chat.postEphemeral",
-        channel=channel,
-        text=response, user=uname
+            "chat.postEphemeral",
+            channel=channel,
+            text=response, user=uname
     )
 
 def parse_bot_commands(slack_events):
