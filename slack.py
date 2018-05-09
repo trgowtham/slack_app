@@ -50,7 +50,8 @@ def slack_direct_message(uname, channel, symbol):
             response = funcDict[slist[0]](slist[1])
         print(symbol.split());
     else:
-        response = funcDict['quote'](slist[0])
+        # capitalize the symbol if not
+        response = funcDict['quote'](slist[0].upper())
 
     slack_client.api_call(
         "chat.postEphemeral",
