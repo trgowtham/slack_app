@@ -67,31 +67,36 @@ def process_recos_html(reco_elements):
     mydb = MyZODB()
     # record new recos encountered
     new_recos = []
+
     for row in reco_elements:
         cells = list(row.find_all('td'))
         # Sample row
-        #[<td class="text-capitalize" width=""> 12-Apr-18                                            </td>,
- # <td width="18%"> <a class="center-block" href="/stocks/2613/natco-pharma-ltd#premium-coverage">Natco Pharma                        </a><
-        # <span class="label label-primary">Timely</span>
-        # /td>,
- # <td class="text-right" width="">14,912</td>,
- # <td class="text-right">776.40</td>,
- # <td class="text-right" width="">807.85</td>,
- # <td class="text-right" width="">4.1</td>,
- # <td class="text-right" width="">2.7</td>,
- # <td class="text-right" width="">10,405</td>,
- # <td class="text-center"><a class="text-uppercase view-coverage" href="/coverage?company_code=2613">view</a></td>,
- # <td class="text-center">
- # <a class="text-uppercase add-watchlist" data-tracking="https://www.valueresearchonline.com/portfolio/wledit.asp/natco-pharma-ltd" href="https://www.valueresearchonline.com/portfolio/wledit.asp?txtSearchCode=2613&amp;txtSearchCodeType=stock&amp;pg=add&amp;ret=2&amp;retflag=recos-all"> add </a>
- # </td>]
 
+    # 0: <td>
+    # <a href="/stocks/296/ashiana-housing-ltd#premium-coverage">
+    #                                                         Ashiana Housing                                                    </a>
+    # <small class="text-capitalize drkgrey"></small> </td>
+    # 1: <td data-order="20171027" width="8%">
+    #                                                     27-Oct-17                                                </td>
+    # 2: <td class="text-right">166.70</td>
+    # 3: <td class="text-right">147.25</td>
+    # 4: <td class="text-right" width="">-11.7</td>
+    # 5: <td class="text-right" width="">3.5</td>
+    # 6: <td class="text-right">1,520</td>
+    # 7: <td class="text-right ">39.77</td>
+    # 8: <td class="text-right ">1.99</td>
+    # 9: <td class="text-right">24/30</td>
+    # 10: <td class="text-center text-right"><a class="text-uppercase view-coverage" href="/coverage?company_code=296">view</a></td>
+    # 11: <td class="text-center text-right">
+    # <a class="text-uppercase add-watchlist" href="#"> added </a>
+    # </td>
         if len(cells) < 2:
             # not a valid row
             break
 
-        reco_date = cells[0].text.strip()
+        reco_date = cells[1].text.strip()
         # Extract name and stock_id from 1st cell
-        reco_name = cells[1].text.strip()
+        reco_name = cells[0].text.strip()
 
         if '\n' in reco_name:
             stock_name, stock_type = reco_name.split('\n')
@@ -100,7 +105,11 @@ def process_recos_html(reco_elements):
         else:
             stock_name = reco_name
             stock_type = 'NA'
-        href = cells[1].find_all('a')[0]['href']
+
+        # extract href
+
+        href = cells[0].find_all('a')[0]['href']
+
         vr_code = href.rsplit('/')[2]
         stock_symbol = get_symbol(vr_code)
         # Timely or All-weather -- this can be missing.
@@ -127,7 +136,9 @@ def process_recos_html(reco_elements):
     return
 
 def get_symbol(vr_code):
+
     stock_url = VR_STOCK_URL + vr_code
+    print(f'get_symbol: {stock_url}')
     driver.get(stock_url)
     stock_page = driver.page_source
     # print(stock_page)
