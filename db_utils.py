@@ -1,10 +1,9 @@
-import os
-import ZODB, ZODB.FileStorage
 import BTrees.OOBTree
-import transaction
 import logging
+import os
+
 from logging.config import fileConfig
-from stocks import Stock
+
 
 DB_PATH= os.path.dirname(os.path.realpath(__file__)) + '/db/mydata.fs'
 
