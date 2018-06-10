@@ -9,7 +9,7 @@ import logging
 
 from tabulate import tabulate
 from logging.config import fileConfig
-from utils import check_vr_reco, min_max_reco_date, get_live_price, reco_percent, alert_below_percentage
+from utils import check_vr_reco, min_max_reco_date, get_live_price, alert_below_percentage
 
 #TODO: use decorator to catch exceptions
 def get_quotes(symbol):
@@ -21,6 +21,7 @@ def get_quotes(symbol):
     #check VR stock or not
     try:
         stock = check_vr_reco(symbol)
+        logging.debug(f'{symbol}: stock obj {stock}')
         info = get_live_price(symbol)
         data = [[info.name],
                 ["LastPrice:", info.lastPrice, info.pChange],
