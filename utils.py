@@ -3,11 +3,28 @@ import logging
 
 from logging.config import fileConfig
 from datetime import date
-from stocks import get_vr_stocks, check_stock_in_db
+from stocks import get_vr_stocks, check_stock_in_db, StockCache
 from dateutil import parser
 from collections import namedtuple
+from multiprocessing import Pool
 
-StockInfo = namedtuple('StockInfo','name lastPrice pChange dayLow dayHigh open')
+# Adding stock symbol to this for easy access.
+StockInfo = namedtuple('StockInfo','name symbol lastPrice pChange dayLow dayHigh open')
+
+cache_live = {}
+CACHE_EXPIRY = 600
+PARALLEL = 5 # parallel threads
+
+def run_parallel(func, arg_list):
+    '''
+
+    :param func:  func to run in parallel
+    :param arg_list: arg_list to func
+    :return:  list of results
+    '''
+    with Pool(PARALLEL) as process:
+        result = process.map(func, arg_list)
+    return result
 
 def check_vr_reco(symbol):
     '''
@@ -64,7 +81,7 @@ def min_max_reco_date(symbol=None):
     logging.debug(f'return: {result}')
     return result
 
-
+@StockCache(cache_live, CACHE_EXPIRY)
 def get_live_price(symbol):
     '''
 
@@ -72,14 +89,17 @@ def get_live_price(symbol):
     :return:  StockInfo object
     '''
     try:
+        logging.debug(f'get live price for {symbol}')
         info = nsepy.live.get_quote(symbol)
-        stock_info = StockInfo(info['companyName'], info['lastPrice'],
+        stock_info = StockInfo(info['companyName'], symbol,
+                               info['lastPrice'],
                                info['pChange'], info['dayLow'],
                                info['dayHigh'],info['open'])
         return stock_info
     except IndexError as err:
         logging.error('get_live_price: %s', str(err))
         raise err
+
 
 
 def alert_below_percentage(percentage):
@@ -89,16 +109,24 @@ def alert_below_percentage(percentage):
     :return: list of semicolon separated strings in order:
             STOCK_SYMBOL ; RECO PRICE ; LIVE_PRICE
     '''
+    logging.debug(f' Getting stocks below {percentage} %')
     result = []
     multiplier = (100 - percentage)/100
-    for stock_symbol, stock in get_vr_stocks():
-        #TODO this can be executed parallely using multiprocess
-        live_price = get_live_price(stock_symbol).lastPrice
+
+    # create a list of vr recommended stock symbols
+    vr_stocks = get_vr_stocks()
+    stock_list = [symbol for symbol, _ in vr_stocks]
+
+    # get live prices
+    vr_live_prices = run_parallel(get_live_price, stock_list)
+    logging.debug(f'{vr_live_prices}')
+    for info_obj in vr_live_prices:
+        stock = check_stock_in_db(info_obj.symbol)
         reco_price = float(stock.reco_date_price.replace(',', ''))
-        logging.debug(f'{stock_symbol} live: {live_price} reco_price: {reco_price}')
-        if live_price < (multiplier * reco_price):
-            logging.debug(f'Appending : {stock_symbol}:  {live_price}')
-            result.append('{:<10};{:<10};{:<10}'.format(stock_symbol, reco_price, live_price))
+        logging.debug(f'{info_obj.symbol} live: {info_obj.lastPrice} reco_price: {reco_price}')
+        if info_obj.lastPrice < (multiplier * reco_price):
+            logging.debug(f'Appending : {info_obj.symbol}:  {info_obj.lastPrice}')
+            result.append('{:<10};{:<10};{:<10}'.format(info_obj.symbol, reco_price, info_obj.lastPrice))
 
     return result
 
@@ -108,3 +136,5 @@ if __name__ == '__main__':
     logger = logging.getLogger()
     result = alert_below_percentage(10)
     logging.debug(f'result of alert_below_percentage(10):  {result}')
+    logging.debug(f'cache: {cache_live}')
+

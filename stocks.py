@@ -1,8 +1,10 @@
 import logging
 import persistent
 from logging.config import fileConfig
-
+from functools import wraps
+from time import time
 from db_utils import MyZODB
+
 
 #TODO find better place to open 1 db instance shared across methods
 # subclass of Persistent to save in DB
@@ -25,6 +27,32 @@ class Stock(persistent.Persistent):
         self.reco_date = reco_date
         self.reco_date_price = reco_date_price
         self.stock_id = stock_id
+
+class StockCache():
+
+    def __init__(self, cache, expiry_time=0):
+        self.cache = cache
+        self.expiry_time = expiry_time
+
+    def __call__(self, func):
+        @wraps(func)
+        def wrapped(*args):
+            mem_args = args[0]
+            if mem_args in self.cache:
+                logging.debug(f' {mem_args} found in cache')
+                result, timestamp = self.cache[mem_args]
+                age = time() - timestamp
+                if age < timestamp:
+                    return result
+                else:
+                    logging.debug(f'{mem_args} values in cache expired')
+
+            result = func(*args)
+            # cache result as tuple with timestamp
+            self.cache[mem_args] = (result, time())
+            logging.debug(f'Cache updated for {mem_args}')
+            return result
+        return wrapped
 
 
 #TODO: Change it to accept what type of stock we want timely or all-weather

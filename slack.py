@@ -57,6 +57,7 @@ def slack_direct_message(uname, channel, symbol):
 
 
     except Exception as ex:
+        logging.debug(f'Exception raise: {ex}')
         response = "Invalid value.Exception raised"
 
     slack_client.api_call(
