@@ -6,7 +6,8 @@ import logging
 
 from logging.config import fileConfig
 from slackclient import SlackClient
-from slack_utils import get_quotes,get_performance,get_vr_stocks_below
+from slack_utils import get_quotes,get_performance,get_vr_stocks_below,get_vr_stocks_live
+
 token_pre = 'xoxb-356641465604'
 #Append the above to the below variable. Masking the token so that it does not get disabled.
 token = token_pre + '-CDXc8LeJUx9woOaSrUY5ByCJ'
@@ -24,6 +25,7 @@ def help_message():
     response.append(f'{"To get current quote: Type ->  symbol":<25}')
     response.append(f'{"To get performance of VR reco: Type ->p symbol":<25}')
     response.append(f'{"To get VR recos under %: Type -> vr %":<25}')
+    response.append(f'{"To get Live prices of VR recos : Type -> vrl":<25}')
     return('\n'.join(response))
 
 
@@ -31,6 +33,7 @@ funcDict = {
     'quote': get_quotes,
     'p': get_performance,
     'vr': get_vr_stocks_below,
+    'vrl': get_vr_stocks_live,
     'help': help_message,
 }
 
@@ -44,13 +47,14 @@ def slack_direct_message(uname, channel, symbol):
     # Sends the direct response back to the channel
     #response = get_quotes(symbol)
     try:
+        print("Sending a slack_direct_message()")
         slist = symbol.split();
+        print(slist)
         if(slist[0] in funcDict.keys()):
-            if(symbol == 'help'):
-                response = funcDict['help']()
+            if(len(slist) == 1):
+                response = funcDict[slist[0]]()
             else:
                 response = funcDict[slist[0]](slist[1])
-            print(symbol.split())
         else:
             # capitalize the symbol if not
             response = funcDict['quote'](slist[0].upper())
@@ -76,8 +80,6 @@ def parse_bot_commands(slack_events):
 def get_quote_message(symbol):
     try:
         s = nsepy.live.get_quote(symbol)
-        #response =  "*{5}*\n_Current quote:_     {0} ({1}%)\n_Day Low:_\t\t     {3}\n_Day High:_\t\t    {2}\n_Open_\t\t\t       {4}".format(s["lastPrice"], s["pChange"],s["dayHigh"],s["dayLow"],s["open"],s["companyName"])
-        #response =  "```{5}\nCurrent quote:\t\t{0} ({1}%)\nDay Low:\t\t\t  {3}\nDay High:\t\t\t {2}\nOpen\t\t\t\t  {4}```".format(s["lastPrice"], s["pChange"],s["dayHigh"],s["dayLow"],s["open"],s["companyName"])
         response =  "```{:25}\n{:25}  {:7} ({:5}%)\n{:25}     {:7}\n{:25}    {:7}\n{:25}      {:7}```".format(s["companyName"],"Current quote:",s["lastPrice"],s["pChange"],"Day Low:",s["dayLow"],"Day High:",s["dayHigh"],"Open:",s["open"])
     except Exception:
         response = "Cannot get quote right now. Please try later!"

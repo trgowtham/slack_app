@@ -9,7 +9,7 @@ import logging
 
 from tabulate import tabulate
 from logging.config import fileConfig
-from utils import check_vr_reco, min_max_reco_date, get_live_price, alert_below_percentage
+from utils import check_vr_reco, min_max_reco_date, get_live_price, alert_below_percentage, get_vr_stocks_live_util
 
 #TODO: use decorator to catch exceptions
 def get_quotes(symbol):
@@ -97,6 +97,23 @@ def get_vr_stocks_below(percentage):
         response.append(f'{""}')
     return '\n'.join(response)
 
+def get_vr_stocks_live():
+    '''
+
+    :param percentange:
+    :return:
+       All stocks making loss or profits above percentage provided
+    '''
+    data = []
+    logging.debug(f'Calling test')
+    for symbol in get_vr_stocks_live_util():
+        slist = symbol.split(';')
+        logging.debug(f'{symbol}')
+        data.append([slist[0], "Current:", "{0}({1}%)".format(slist[2].rstrip(), slist[3].rstrip()), "RecoP:", slist[1]])
+        #response.append(f'{slist[0]:<25}CurP: {slist[2]:<10}({slist[3]}%) RecoP:  {slist[1]:<25}')
+    ret = tabulate(data, tablefmt="simple", numalign="left")# numalign="left")
+    logging.debug(ret)
+    return ret
 
 if __name__ == '__main__':
     fileConfig('logging.ini', disable_existing_loggers=True)

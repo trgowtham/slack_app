@@ -100,7 +100,20 @@ def get_live_price(symbol):
         logging.error('get_live_price: %s', str(err))
         raise err
 
+def get_vr_price_live():
+    '''
 
+    :return: list of VR StockInfo objects
+    '''
+    # create a list of vr recommended stock symbols
+    vr_stocks = get_vr_stocks()
+    stock_list = [symbol for symbol, _ in vr_stocks]
+
+    # get live prices
+    vr_live_prices = run_parallel(get_live_price, stock_list)
+    logging.debug(f'{vr_live_prices}')
+
+    return vr_live_prices
 
 def alert_below_percentage(percentage):
     '''
@@ -113,12 +126,8 @@ def alert_below_percentage(percentage):
     result = []
     multiplier = (100 - percentage)/100
 
-    # create a list of vr recommended stock symbols
-    vr_stocks = get_vr_stocks()
-    stock_list = [symbol for symbol, _ in vr_stocks]
-
     # get live prices
-    vr_live_prices = run_parallel(get_live_price, stock_list)
+    vr_live_prices = get_vr_price_live()
     logging.debug(f'{vr_live_prices}')
     for info_obj in vr_live_prices:
         stock = check_stock_in_db(info_obj.symbol)
@@ -128,6 +137,26 @@ def alert_below_percentage(percentage):
             logging.debug(f'Appending : {info_obj.symbol}:  {info_obj.lastPrice}')
             result.append('{:<10};{:<10};{:<10}'.format(info_obj.symbol, reco_price, info_obj.lastPrice))
 
+    return result
+
+def get_vr_stocks_live_util():
+    '''
+
+    :return: list of semicolon separated strings in order:
+            STOCK_SYMBOL ; RECO PRICE ; LIVE_PRICE ; DAYPCHANGE
+    '''
+    logging.debug(f' Getting VR stocks live ')
+    result = []
+
+    # get live prices
+    vr_live_prices = get_vr_price_live()
+    logging.debug(f'{vr_live_prices}')
+    for info_obj in vr_live_prices:
+        stock = check_stock_in_db(info_obj.symbol)
+        reco_price = float(stock.reco_date_price.replace(',', ''))
+        logging.debug(f'{info_obj.symbol} live: {info_obj.lastPrice} reco_price: {reco_price}')
+        result.append('{:<10};{:<10};{:<10};{:<10}'.format(info_obj.symbol, reco_price, info_obj.lastPrice,info_obj.pChange))
+    
     return result
 
 
