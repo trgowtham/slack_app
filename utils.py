@@ -115,9 +115,9 @@ def get_vr_price_live():
 
     return vr_live_prices
 
-def alert_below_percentage(percentage):
+def alert_below_percentage(all_time, percentage):
     '''
-
+    :all_time: Get all-time(since VR recommended date) or day's change
     :param percentage: how much lower the value has gone
     :return: list of semicolon separated strings in order:
             STOCK_SYMBOL ; RECO PRICE ; LIVE_PRICE
@@ -133,9 +133,16 @@ def alert_below_percentage(percentage):
         stock = check_stock_in_db(info_obj.symbol)
         reco_price = float(stock.reco_date_price.replace(',', ''))
         logging.debug(f'{info_obj.symbol} live: {info_obj.lastPrice} reco_price: {reco_price}')
-        if info_obj.lastPrice < (multiplier * reco_price):
-            logging.debug(f'Appending : {info_obj.symbol}:  {info_obj.lastPrice}')
-            result.append('{:<10};{:<10};{:<10}'.format(info_obj.symbol, reco_price, info_obj.lastPrice))
+        if all_time:
+            # Filter all-time(since VR recommended date) percent change
+            if info_obj.lastPrice < (multiplier * reco_price):
+                logging.debug(f'Appending : {info_obj.symbol}:  {info_obj.lastPrice}')
+                result.append('{:<10};{:<10};{:<10}'.format(info_obj.symbol, reco_price, info_obj.lastPrice))
+        else:
+            # Filter by day's percent change
+            if float(info_obj.pChange) < percentage:
+                logging.debug(f'Appending : {info_obj.symbol}:  {info_obj.lastPrice}')
+                result.append('{:<10};{:<10};{:<10};{:<10}'.format(info_obj.symbol, info_obj.lastPrice, info_obj.pChange, reco_price))
 
     return result
 
@@ -163,7 +170,7 @@ def get_vr_stocks_live_util():
 if __name__ == '__main__':
     fileConfig('logging.ini', disable_existing_loggers=True)
     logger = logging.getLogger()
-    result = alert_below_percentage(10)
+    result = alert_below_percentage(True, 10)
     logging.debug(f'result of alert_below_percentage(10):  {result}')
     logging.debug(f'cache: {cache_live}')
 

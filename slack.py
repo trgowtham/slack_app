@@ -77,14 +77,6 @@ def parse_bot_commands(slack_events):
             return event["text"], event["user"], event["channel"]
     return None, None, None
 
-def get_quote_message(symbol):
-    try:
-        s = nsepy.live.get_quote(symbol)
-        response =  "```{:25}\n{:25}  {:7} ({:5}%)\n{:25}     {:7}\n{:25}    {:7}\n{:25}      {:7}```".format(s["companyName"],"Current quote:",s["lastPrice"],s["pChange"],"Day Low:",s["dayLow"],"Day High:",s["dayHigh"],"Open:",s["open"])
-    except Exception:
-        response = "Cannot get quote right now. Please try later!"
-    return response
-
 if __name__ == "__main__":
     #logging.basicConfig(level=logging.DEBUG, filename='slack_stock.log')
     fileConfig('logging.ini')

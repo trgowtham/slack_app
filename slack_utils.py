@@ -6,6 +6,7 @@ format them and then return.
 
 '''
 import logging
+import datetime
 
 from tabulate import tabulate
 from logging.config import fileConfig
@@ -86,7 +87,7 @@ def get_vr_stocks_below(percentage):
        All stocks making loss or profits above percentage provided
     '''
     response = []
-    for symbol in alert_below_percentage(int(percentage)):
+    for symbol in alert_below_percentage(True, int(percentage)):
         slist = symbol.split(';')
         logging.debug(f'{symbol}')
         response.append(f'{"Symbol:":<15}{slist[0]:<25}')
@@ -94,6 +95,26 @@ def get_vr_stocks_below(percentage):
         response.append(f'{"Reco price:":<15}{slist[1]:<25}')
         percent = ((float(slist[2]) - float(slist[1])) / float(slist[1])) * 100
         response.append(f'{"% change:":<15}{round(percent, 2):<5}%')
+        response.append(f'{""}')
+    return '\n'.join(response)
+
+def get_vr_stocks_alert(percentage):
+    '''
+
+    :param percentange:
+    :return:
+       All stocks making loss or profits above percentage provided
+    '''
+    response = []
+    #response.append(datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S"))
+    response.append(f'Alert for {datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")}')
+    for symbol in alert_below_percentage(False, int(percentage)):
+        slist = symbol.split(';')
+        logging.debug(f'{symbol}')
+        response.append(f'{"Symbol:":<15}{slist[0]:<25}')
+        response.append(f'{"Live price:":<15}{slist[1]:<25}')
+        response.append(f'{"pChange:":<15}{slist[2]:<25}')
+        response.append(f'{"Reco price:":<15}{slist[3]:<25}')
         response.append(f'{""}')
     return '\n'.join(response)
 
