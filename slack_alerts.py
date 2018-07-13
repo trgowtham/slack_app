@@ -1,13 +1,9 @@
-import os
-import time
-import re
-import nsepy
 import logging
 import sys
 
 from logging.config import fileConfig
 from slackclient import SlackClient
-from slack_utils import get_vr_stocks_alert
+from slack_utils import get_vr_stocks_below
 
 token_pre = 'xoxb-356641465604'
 #Append the above to the below variable. Masking the token so that it does not get disabled.
@@ -16,13 +12,8 @@ token = token_pre + '-CDXc8LeJUx9woOaSrUY5ByCJ'
 slack_client = SlackClient(token)
 
 argDict = {
-    'market_open': get_vr_stocks_alert,
+    'market_open': get_vr_stocks_below,
 }
-
-# constants
-RTM_READ_DELAY = 1 # 1 second delay between reading from RTM
-EXAMPLE_COMMAND = "do"
-MENTION_REGEX = "^<@(|[WU].+?)>(.*)"
 
 def slack_message(message, channel):
     # Sends the direct response back to the channel
@@ -39,9 +30,5 @@ if __name__ == "__main__":
         print('Invalid Usage')
         exit()
 
-    response = argDict[arg[0]](-3)
+    response = argDict[arg[0]](percentage="-3",all_time=False)
     slack_message(response, 'stock-alerts')
-
-    #print('Sending Message');
-    #slack_message("From Python Script", "stocks");
-

@@ -1,7 +1,6 @@
 import os
 import time
 import re
-import nsepy
 import logging
 
 from logging.config import fileConfig

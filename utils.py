@@ -115,7 +115,7 @@ def get_vr_price_live():
 
     return vr_live_prices
 
-def alert_below_percentage(all_time, percentage):
+def alert_below_percentage(percentage, all_time=True):
     '''
     :all_time: Get all-time(since VR recommended date) or day's change
     :param percentage: how much lower the value has gone
@@ -142,7 +142,7 @@ def alert_below_percentage(all_time, percentage):
             # Filter by day's percent change
             if float(info_obj.pChange) < percentage:
                 logging.debug(f'Appending : {info_obj.symbol}:  {info_obj.lastPrice}')
-                result.append('{:<10};{:<10};{:<10};{:<10}'.format(info_obj.symbol, info_obj.lastPrice, info_obj.pChange, reco_price))
+                result.append('{:<10};{:<10};{:<10};{:<10}'.format(info_obj.symbol, reco_price, info_obj.lastPrice, info_obj.pChange))
 
     return result
 
