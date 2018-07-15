@@ -1,15 +1,33 @@
 import BTrees.OOBTree
 import logging
 import os
+import subprocess
+
+import transaction
+from ZODB import DB
+from ZEO.ClientStorage import ClientStorage
 
 from logging.config import fileConfig
 
 
 DB_PATH= os.path.dirname(os.path.realpath(__file__)) + '/db/mydata.fs'
 
-from ZODB import FileStorage, DB
-import transaction
+DB_PORT = 5555
+SERVER = 'localhost'
 
+
+def start_server():
+    # use zeoctl
+    zeo_cmd = f'runzeo -a {SERVER}:{DB_PORT} -f {DB_PATH}'
+    status_cmd = ['zeoctl', '-p', zeo_cmd ,'status']
+    start_cmd = ['zeoctl', '-p', zeo_cmd ,'start']
+    logging.debug(f'Checking zeoctl status')
+    if subprocess.run(status_cmd).returncode:
+        # start the process
+        logging.debug(f'Starting zeoctl process')
+        if subprocess.run(start_cmd).returncode:
+            raise Exception('Unable to start ZEO server')
+        logging.debug(f'Successfully started zeoctl')
 
 class MyZODB(object):
 
@@ -27,13 +45,21 @@ class MyZODB(object):
             logging.debug(f'DB Object already exists. Return')
             return
         logging.debug('Creating a new db instance')
-        self.storage = FileStorage.FileStorage(DB_PATH)
+
+        # start the server if not started already
+        start_server()
+
+        server_and_port = (SERVER, DB_PORT)
+        self.storage = ClientStorage(server_and_port)
         self.db = DB(self.storage)
         self.connection = self.db.open()
         self.dbroot = self.connection.root()
+        self.dbroot = self.connection.root()
 
     def close(self):
+        self.connection.close()
         self.db.close()
+        self.storage.close()
 
 def create_db():
     #One time action of creating and DB and other actions
@@ -46,6 +72,7 @@ def create_db():
     mydb.close()
 
 if __name__ == '__main__':
+
     fileConfig('logging.ini', disable_existing_loggers=True)
     logger = logging.getLogger()
     # print all the stocks in DB
