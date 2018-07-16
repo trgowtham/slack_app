@@ -13,19 +13,19 @@ for job in my_cron:
 
 # Keep-Alive
 
-job = my_cron.new(command='/home/ubuntu/slack_app/slack_cron.sh', comment='keep_alive')
+job = my_cron.new(command='/home/ubuntu/slack_app/slack_keep_alive.sh', comment='keep_alive')
 job.minute.every(15)
 
 # Market-Open
 
-job = my_cron.new(command='cd /home/ubuntu/slack_app && /home/ubuntu/slack_app/myvenv/bin/python3.6 /home/ubuntu/slack_app/slack_alerts.py market_open', comment='mkt_open_alert')
+job = my_cron.new(command='/home/ubuntu/slack_app/slack_alert_wrapper.sh market_open', comment='mkt_open_alert')
 job.minute.on(30)
 job.hour.on(9)
 job.dow.on('MON', 'TUE', 'WED', 'THU', 'FRI')
 
 # Market-Close
 
-job = my_cron.new(command='cd /home/ubuntu/slack_app && /home/ubuntu/slack_app/myvenv/bin/python3.6 /home/ubuntu/slack_app/slack_alerts.py market_open', comment='mkt_close_alert')
+job = my_cron.new(command='/home/ubuntu/slack_app/slack_alert_wrapper.sh market_open', comment='mkt_close_alert')
 job.minute.on(45)
 job.hour.on(15)
 job.dow.on('MON', 'TUE', 'WED', 'THU', 'FRI')
