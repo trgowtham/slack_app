@@ -49,7 +49,7 @@ def slack_direct_message(uname, channel, symbol):
         print("Sending a slack_direct_message()")
         slist = symbol.split();
         print(slist)
-        if(slist[0] in funcDict.keys()):
+        if(slist[0].lower() in funcDict.keys()):
             if(len(slist) == 1):
                 response = funcDict[slist[0]]()
             else:
