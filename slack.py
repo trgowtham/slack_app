@@ -51,7 +51,7 @@ def slack_direct_message(uname, channel, symbol):
         print(slist)
         if(slist[0].lower() in funcDict.keys()):
             if(len(slist) == 1):
-                response = funcDict[slist[0]]()
+                response = funcDict[slist[0].lower()]()
             else:
                 response = funcDict[slist[0].lower()](slist[1])
         else:
