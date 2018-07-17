@@ -53,7 +53,7 @@ def slack_direct_message(uname, channel, symbol):
             if(len(slist) == 1):
                 response = funcDict[slist[0]]()
             else:
-                response = funcDict[slist[0]](slist[1])
+                response = funcDict[slist[0].lower()](slist[1])
         else:
             # capitalize the symbol if not
             response = funcDict['quote'](slist[0].upper())
