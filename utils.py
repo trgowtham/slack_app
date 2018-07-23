@@ -140,7 +140,7 @@ def alert_below_percentage(percentage, all_time=True):
                 result.append('{:<10};{:<10};{:<10}'.format(info_obj.symbol, reco_price, info_obj.lastPrice))
         else:
             # Filter by day's percent change
-            if float(info_obj.pChange) < percentage:
+            if float(info_obj.pChange) < percentage or float(info_obj.pChange) > abs(percentage):
                 logging.debug(f'Appending : {info_obj.symbol}:  {info_obj.lastPrice}')
                 result.append('{:<10};{:<10};{:<10};{:<10}'.format(info_obj.symbol, reco_price, info_obj.lastPrice, info_obj.pChange))
 
