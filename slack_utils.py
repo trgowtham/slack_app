@@ -94,7 +94,7 @@ def get_vr_stocks_below(percentage, all_time=True):
         logging.debug(f'{symbol}')
         response.append(f'{"Symbol:":<15}{slist[0]:<25}')
         if not all_time:
-            response.append(f'{"Live price:":<15}{slist[2]:<25}{"("slist[3]")":<15}')
+            response.append(f'{"Live price:":<15}{slist[2]:<5}{"( ":<2}{slist[3].strip():<1}{"%)":<2}')
             response.append(f'{"Reco price:":<15}{slist[1]:<25}')
         else:
             response.append(f'{"Live price:":<15}{slist[2]:<25}')
