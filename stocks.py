@@ -1,32 +1,29 @@
+import csv
 import logging
-import persistent
 from logging.config import fileConfig
 from functools import wraps
 from time import time
-from db_utils import MyZODB
+from collections import  namedtuple
 
+Stock = namedtuple('Stock', 'name type symbol reco_date reco_date_price stock_id')
 
-#TODO find better place to open 1 db instance shared across methods
-# subclass of Persistent to save in DB
+# Dictionary to hold all VR stocks namedtuple
+VR_STOCKS = None
 
-class Stock(persistent.Persistent):
+def all_vr_stocks():
+    '''
+     Read vr_stock_db.csv and return a list of tuples, (stock, namedtuple)
 
-    def __init__(self, name, type, symbol, reco_date, reco_date_price, stock_id):
-        '''
+    :return:
+    '''
 
-        :param name: name of stockl
-        :param type:  Timely or All weather
-        :param symbol:  NSE symbol
-        :param reco_date:  Date of recommendation
-        :param reco_date_price:  Price of recommendation date
-        :param stock_id : VR stock id for lookup
-        '''
-        self.name = name
-        self.type = type
-        self.symbol = symbol
-        self.reco_date = reco_date
-        self.reco_date_price = reco_date_price
-        self.stock_id = stock_id
+    with open('vr_stock_db.csv', mode='r') as csv_file:
+        csv_reader = csv.DictReader(csv_file)
+        line_count = 0
+        stock_list = [Stock(**row) for row in csv_reader]
+        logging.debug(f'all_vr_stocks: {stock_list}')
+    return {s.symbol: s for s in stock_list}
+
 
 class StockCache():
 
@@ -62,11 +59,12 @@ def get_vr_stocks():
     :param type:
     :return: list of tuples (symbol, stock_object)
     '''
+    global  VR_STOCKS
 
-    mydb = MyZODB()
-    logging.debug(f"Total Recommended stocks : {len(mydb.dbroot.stocks)}")
+    if not VR_STOCKS:
+        VR_STOCKS = all_vr_stocks()
 
-    return mydb.dbroot.stocks.items()
+    return VR_STOCKS.items()
 
 def check_stock_in_db(symbol):
     '''
@@ -74,19 +72,27 @@ def check_stock_in_db(symbol):
     :param symbol:
     :return:  stock object or None
     '''
-    stock_obj = None
-    mydb = MyZODB()
-    if symbol in mydb.dbroot.stocks:
-        stock_obj = mydb.dbroot.stocks[symbol]
+    global VR_STOCKS
+    if not VR_STOCKS:
+        VR_STOCKS = all_vr_stocks()
+
+    if symbol in VR_STOCKS:
+        stock_obj = VR_STOCKS[symbol]
 
     return stock_obj
+
 
 if __name__ == '__main__':
     fileConfig('logging.ini',disable_existing_loggers=True)
     logger = logging.getLogger()
+
+    fileConfig('logging.ini',disable_existing_loggers=True)
+    logger = logging.getLogger()
     res = get_vr_stocks()
-    logging.debug("get stocks: stored in %s" % type(res))
+    logging.debug(f'stocks: {res}')
 
     symbol = 'LT'
     stock_obj = check_stock_in_db(symbol)
+    tuple_dict = {d[0]:None for d in res}
     logging.debug(f'{symbol} : {stock_obj.type}')
+
