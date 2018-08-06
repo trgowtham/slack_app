@@ -1,5 +1,7 @@
 import csv
 import logging
+import shutil
+
 from logging.config import fileConfig
 from functools import wraps
 from time import time
@@ -7,6 +9,7 @@ from collections import  namedtuple
 
 Stock = namedtuple('Stock', 'name type symbol reco_date reco_date_price stock_id')
 
+VR_CSV_FILE = 'vr_stock_db.csv'
 # Dictionary to hold all VR stocks namedtuple
 VR_STOCKS = None
 
@@ -17,7 +20,7 @@ def all_vr_stocks():
     :return:
     '''
 
-    with open('vr_stock_db.csv', mode='r') as csv_file:
+    with open(VR_CSV_FILE, mode='r') as csv_file:
         csv_reader = csv.DictReader(csv_file)
         line_count = 0
         stock_list = [Stock(**row) for row in csv_reader]
@@ -72,6 +75,7 @@ def check_stock_in_db(symbol):
     :param symbol:
     :return:  stock object or None
     '''
+    stock_obj = None
     global VR_STOCKS
     if not VR_STOCKS:
         VR_STOCKS = all_vr_stocks()
@@ -80,6 +84,29 @@ def check_stock_in_db(symbol):
         stock_obj = VR_STOCKS[symbol]
 
     return stock_obj
+
+def add_recos(new_reco):
+
+    # Temp file to write to.
+    TEMP_CSV = 'vr_stock_db_temp.csv'
+    #create a dummy file with all existing reco and then add the new objects
+    recos = all_vr_stocks()
+
+    # add the new recos to VR_STOCKS.
+    # This is to make a single data point to write back to file.
+    for stock in new_reco:
+        recos[stock.symbol] = stock
+
+    # write to a dummy file
+    with open(TEMP_CSV, 'w') as f:
+        writer = csv.DictWriter(f, fieldnames=Stock._fields)
+        writer.writeheader()
+        for d in recos.items():
+            # import pdb;pdb.set_trace()
+            writer.writerow(d[1]._asdict())
+
+    # move temp file to original db csv file
+    shutil.move(TEMP_CSV, VR_CSV_FILE)
 
 
 if __name__ == '__main__':

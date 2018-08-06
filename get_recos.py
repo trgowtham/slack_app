@@ -13,7 +13,7 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 
 from db_utils import MyZODB
-from stocks import Stock
+from stocks import Stock, check_stock_in_db, add_recos
 
 DRIVER_PATH='/chromedriver'
 VR_LOGIN_URL='https://www.valueresearchonline.com/membership/getin.asp'
@@ -123,16 +123,16 @@ def process_recos_html(reco_elements):
         print(f" 3: {cells[3].text}")
         #(self, name, type, symbol, reco_date, reco_date_price, stock_id)
         # create a stock object check if it exists in db if not add.
-        if stock_symbol not in mydb.dbroot.stocks:
-            stock = Stock(stock_name, stock_type, stock_symbol,reco_date, reco_date_price, vr_code)
-            mydb.dbroot.stocks[stock_symbol] = stock
-            new_recos.append(stock_symbol)
 
-    transaction.commit()
-    print(f"Saved {len(mydb.dbroot.stocks)}")
+        if not check_stock_in_db(stock_symbol):
+            stock = Stock(stock_name, stock_type, stock_symbol,reco_date, reco_date_price, vr_code)
+            new_recos.append(stock)
+
+    # add_recos to the csv file
+    add_recos(new_recos)
+    print(f"Saved {len(new_recos)}")
     #TODO Send alert for new recos added using list new_recos
 
-    mydb.close()
     return
 
 def get_symbol(vr_code):
