@@ -122,6 +122,27 @@ def get_vr_stocks_live():
     logging.debug(ret)
     return ret
 
+def get_vr_stocks_live_below(percentage):
+    '''
+
+    :param percentange:
+    :return:
+       All stocks making loss or profits above percentage provided
+    '''
+    data = []
+    logging.debug(f'Calling test')
+    for symbol in get_vr_stocks_live_util():
+        slist = symbol.split(';')
+        logging.debug(f'GT {symbol}')
+        if float(slist[3].rstrip()) < (-1 * float(percentage)):
+            logging.debug(f'{symbol}')
+            data.append([slist[0], "Current:", "{0}({1}%)".format(slist[2].rstrip(), slist[3].rstrip()), "RecoP:", slist[1]])
+        #response.append(f'{slist[0]:<25}CurP: {slist[2]:<10}({slist[3]}%) RecoP:  {slist[1]:<25}')
+    data.append(f'{""}')
+    ret = tabulate(data, tablefmt="simple", numalign="left")# numalign="left")
+    logging.debug(ret)
+    return ret
+
 if __name__ == '__main__':
     fileConfig('logging.ini', disable_existing_loggers=True)
     logger = logging.getLogger()

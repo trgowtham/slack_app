@@ -5,7 +5,7 @@ import logging
 
 from logging.config import fileConfig
 from slackclient import SlackClient
-from slack_utils import get_quotes,get_performance,get_vr_stocks_below,get_vr_stocks_live
+from slack_utils import get_quotes,get_performance,get_vr_stocks_below,get_vr_stocks_live,get_vr_stocks_live_below
 
 token_pre = 'xoxb-356641465604'
 #Append the above to the below variable. Masking the token so that it does not get disabled.
@@ -25,6 +25,7 @@ def help_message():
     response.append(f'{"To get performance of VR reco: Type ->p symbol":<25}')
     response.append(f'{"To get VR recos under %: Type -> vr %":<25}')
     response.append(f'{"To get Live prices of VR recos : Type -> vrl":<25}')
+    response.append(f'{"To get Live prices of VR recos under %: Type -> vrt %":<25}')
     return('\n'.join(response))
 
 
@@ -33,6 +34,7 @@ funcDict = {
     'p': get_performance,
     'vr': get_vr_stocks_below,
     'vrl': get_vr_stocks_live,
+    'vrt': get_vr_stocks_live_below,
     'help': help_message,
 }
 
