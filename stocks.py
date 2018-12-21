@@ -21,7 +21,8 @@ def all_vr_stocks():
     '''
 
     with open(VR_CSV_FILE, mode='r') as csv_file:
-        csv_reader = csv.DictReader(csv_file)
+        # Filter lines which starts with comments
+        csv_reader = csv.DictReader(filter(lambda row: row[0]!= '#', csv_file))
         line_count = 0
         stock_list = [Stock(**row) for row in csv_reader]
         logging.debug(f'all_vr_stocks: {stock_list}')
