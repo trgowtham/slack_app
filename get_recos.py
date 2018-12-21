@@ -5,14 +5,11 @@
 # for each reco extrat stock id on VR website
 # get stock page and extract NSE code
 import os
-import requests
-import selenium
-import transaction
 
 from bs4 import BeautifulSoup
 from selenium import webdriver
 
-from db_utils import MyZODB
+
 from stocks import Stock, check_stock_in_db, add_recos
 
 DRIVER_PATH='/chromedriver'
@@ -20,6 +17,7 @@ VR_LOGIN_URL='https://www.valueresearchonline.com/membership/getin.asp'
 VR_USERNAME='kuchbivr@gmail.com'
 VR_PASSWORD='handl3bar'
 VR_ALL_RECO_URL='https://www.valueresearchstocks.com/recos-all'
+
 #Append stock code to get VR stock page
 VR_STOCK_URL='https://www.valueresearchonline.com/stocks/snapshot.asp?code='
 
@@ -64,7 +62,6 @@ def process_recos_html(reco_elements):
     '''
 
 
-    mydb = MyZODB()
     # record new recos encountered
     new_recos = []
 
