@@ -1,4 +1,5 @@
 import logging
+import os
 import sys
 
 from logging.config import fileConfig
@@ -52,23 +53,39 @@ def format_alert(stock_list):
     return '\n'.join(response)
 
 if __name__ == "__main__":
-    fileConfig('logging.ini')
-    logger = logging.getLogger()
-    lhStdout = logger.handlers[0]
 
-    fileHandler = logging.FileHandler('slack_hourly.log')
-    logger.addHandler(fileHandler)
-    logger.removeHandler(lhStdout)
+    # create the logging instance for logging to file only
+    logger = logging.getLogger('')
+
+    # create the handler for the main logger
+    file_logger = logging.FileHandler('slack_hourly.log')
+    NEW_FORMAT = '[%(asctime)s] - [%(levelname)s] - %(message)s'
+    file_logger_format = logging.Formatter(NEW_FORMAT)
+
+    # tell the handler to use the above format
+    file_logger.setFormatter(file_logger_format)
+
+    # finally, add the handler to the base logger
+    logger.addHandler(file_logger)
+
+    # remember that by default, logging will start at 'warning' unless
+    # we set it manually
+    logger.setLevel(logging.DEBUG)
+
+
     tz    = timezone('Asia/Calcutta')
     current_time = datetime.now(tz)
 
+    # This is just for testing
+    prev_response = ''
     # Get stock which went up/down by 3%
     while True:
         current_time = datetime.now(tz)
 
         # Exit the script @ 4PM
-        if current_time.hour > 15:
-            sys.exit(0)
+        #if current_time.hour > 15:
+
+        #    sys.exit(0)
 
         stock_list = alert_below_percentage(3)
         new_alert_stock = []
@@ -78,7 +95,7 @@ if __name__ == "__main__":
                 new_alert_stock.append(stock)
                 alert_tracking[stock.symbol] = stock
                 #logging.debug(f'Adding {stock.name} to alert_tracking')
-                print(f'Adding {stock.name} to alert_tracking')
+                logging.debug(f'Adding {stock.name} to alert_tracking')
             else:
                 # if the stock fall 3 % more (i.e 6% now)
                 # then send the alert again
@@ -90,9 +107,14 @@ if __name__ == "__main__":
                     logging.debug(f'pChange {stock.name} to alert_tracking')
                     logging.debug(f'Adding {stock.name} to alert_tracking')
                     new_alert_stock.append(stock)
-        print(new_alert_stock)
         response = format_alert(new_alert_stock)
-        #slack_message(response, 'stock-alerts')
-        slack_message(response, 'testing')
+        logging.debug(f'Prev Alert was  : {prev_response}')
+        logging.debug(f'New Alert which will  : {response}')
+        prev_response = response
+        if new_alert_stock:
+            #slack_message(response, 'stock-alerts')
+            logging.debug(f'response: {response}')
+            #slack_message(response, 'testing')
+
         logging.debug(f'Sleep for 20 min')
         sleep(60*20)
