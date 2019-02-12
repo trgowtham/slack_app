@@ -114,7 +114,7 @@ if __name__ == "__main__":
         if new_alert_stock:
             #slack_message(response, 'stock-alerts')
             logging.debug(f'response: {response}')
-            #slack_message(response, 'testing')
+            slack_message(response, 'testing')
 
         logging.debug(f'Sleep for 20 min')
         sleep(60*20)
