@@ -111,9 +111,8 @@ if __name__ == "__main__":
         current_time = datetime.now(tz)
 
         # Exit the script @ 4PM
-        #if current_time.hour > 15:
-
-        #    sys.exit(0)
+        if current_time.hour > 15:
+            sys.exit(0)
 
         stock_list = alert_below_percentage(3)
         new_alert_stock = []
