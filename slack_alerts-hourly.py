@@ -1,7 +1,7 @@
 import logging
 import os
 import sys
-
+from nsetools import Nse
 from logging.config import fileConfig
 from slackclient import SlackClient
 from utils import get_vr_price_live, StockInfo
@@ -11,6 +11,23 @@ from datetime import datetime
 from pytz import timezone
 
 
+NIFTY = 'NIFTY 50'
+
+def dict_to_stock_info(stock_dict):
+    '''
+    Convert dictionary returned from Nse to StockInfo object
+    to make it compatible with existing tools
+    :param stock_dict:
+    :return:  StockInfo
+    '''
+    logging.debug(f'Nse dict: {stock_dict}')
+    #pChange = Decimal(stock_dict["pChange"])
+    pChange = -6.0
+    stock_info = StockInfo(stock_dict['name'], NIFTY, stock_dict["lastPrice"], pChange, -1, -1, -1)
+    logging.debug(f' Equivalent StockInfo: {stock_info}')
+    return stock_info
+
+
 def alert_below_percentage(percentage):
     '''
     :param percentage: how much lower the value has gone
@@ -18,7 +35,7 @@ def alert_below_percentage(percentage):
     '''
     logging.debug(f' Getting stocks below {percentage} %')
     result = []
-    # get live prices
+    # get live prices of VR stocks
     vr_live_prices = get_vr_price_live()
     #logging.debug(f'{vr_live_prices}')
     for stock in vr_live_prices[:]:
@@ -27,7 +44,18 @@ def alert_below_percentage(percentage):
             #print(stock.name)
             logging.debug(f'{stock.name}: {stock.pChange}')
             result.append(stock)
-    logging.debug(f'{result}')
+    logging.debug(f'VR results : {result}')
+
+    # check 'NIFTY 50'
+    nse = Nse()
+    nifty_q = dict_to_stock_info(nse.get_index_quote(NIFTY))
+    #StockInfo = namedtuple('StockInfo', 'name symbol lastPrice pChange dayLow dayHigh open')
+    if abs(nifty_q.pChange) > percentage:
+        logging.debug(f'Adding {nifty_q.name}: {nifty_q.pChange}')
+        result.append(nifty_q)
+    else:
+        logging.debug(f'NIFTY change : {nifty_q.pChange}')
+
     return result
 
 token_pre = 'xoxb-356641465604'
