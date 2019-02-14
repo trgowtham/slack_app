@@ -131,7 +131,9 @@ if __name__ == "__main__":
                 new_pchange = Decimal(stock.pChange)
                 diff_pchange = new_pchange - old_pchange
 
-                if abs(diff_pchange) >  abs(old_pchange):
+                #if abs(diff_pchange) >  abs(old_pchange):
+                # if the stock has further fallen more than 2 % report.
+                if abs(diff_pchange) > 2 :
                     logging.debug(f'pChange {stock.name} to alert_tracking')
                     logging.debug(f'Adding {stock.name} to alert_tracking')
                     new_alert_stock.append(stock)
@@ -144,5 +146,5 @@ if __name__ == "__main__":
             logging.debug(f'response: {response}')
             slack_message(response, 'testing')
 
-        logging.debug(f'Sleep for 20 min')
-        sleep(60*20)
+        logging.debug(f'Sleep for 15 min')
+        sleep(60*15)
