@@ -6,12 +6,16 @@ from logging.config import fileConfig
 from slackclient import SlackClient
 from utils import get_vr_price_live, StockInfo
 from time import sleep
-from decimal import Decimal
+from decimal import Decimal, getcontext
 from datetime import datetime
 from pytz import timezone
 
 
 NIFTY = 'NIFTY 50'
+NIFTY_TRIGGER = 1
+
+# set decimal values to upto 2 values
+TWOPLACES = Decimal(10) ** -2
 
 def dict_to_stock_info(stock_dict):
     '''
@@ -21,8 +25,7 @@ def dict_to_stock_info(stock_dict):
     :return:  StockInfo
     '''
     logging.debug(f'Nse dict: {stock_dict}')
-    #pChange = Decimal(stock_dict["pChange"])
-    pChange = -6.0
+    pChange = Decimal(stock_dict["pChange"]).quantize(TWOPLACES)
     stock_info = StockInfo(stock_dict['name'], NIFTY, stock_dict["lastPrice"], pChange, -1, -1, -1)
     logging.debug(f' Equivalent StockInfo: {stock_info}')
     return stock_info
@@ -50,7 +53,7 @@ def alert_below_percentage(percentage):
     nse = Nse()
     nifty_q = dict_to_stock_info(nse.get_index_quote(NIFTY))
     #StockInfo = namedtuple('StockInfo', 'name symbol lastPrice pChange dayLow dayHigh open')
-    if abs(nifty_q.pChange) > percentage:
+    if abs(nifty_q.pChange) > NIFTY_TRIGGER:
         logging.debug(f'Adding {nifty_q.name}: {nifty_q.pChange}')
         result.append(nifty_q)
     else:
@@ -111,13 +114,13 @@ if __name__ == "__main__":
         current_time = datetime.now(tz)
 
         # Exit the script @ 4PM
-        if current_time.hour > 15:
+        if current_time.hour > 16:
             sys.exit(0)
 
         stock_list = alert_below_percentage(3)
         new_alert_stock = []
         for stock in stock_list:
-            #import pdb;pdb.set_trace()
+
             if stock.symbol not in alert_tracking.keys():
                 new_alert_stock.append(stock)
                 alert_tracking[stock.symbol] = stock
@@ -129,13 +132,15 @@ if __name__ == "__main__":
                 old_pchange = Decimal(alert_tracking[stock.symbol].pChange)
                 new_pchange = Decimal(stock.pChange)
                 diff_pchange = new_pchange - old_pchange
+                # update the stock
+                alert_tracking[stock.symbol] = stock
 
-                #if abs(diff_pchange) >  abs(old_pchange):
-                # if the stock has further fallen more than 2 % report.
-                if abs(diff_pchange) > 2 :
+                # if the stock has further fallen more than 1 % report.
+                if abs(diff_pchange) > 1 :
                     logging.debug(f'pChange {stock.name} to alert_tracking')
                     logging.debug(f'Adding {stock.name} to alert_tracking')
                     new_alert_stock.append(stock)
+
         response = format_alert(new_alert_stock)
         logging.debug(f'Prev Alert was  : {prev_response}')
         logging.debug(f'New Alert which will  : {response}')
